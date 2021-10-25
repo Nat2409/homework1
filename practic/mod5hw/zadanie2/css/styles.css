@@ -1,0 +1,52 @@
+.conteiner {
+  position: relative;
+  height: 400px;
+  width: 400px;
+  background: #424242;
+  margin: 0 auto;
+}
+.blok {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  background-color: ;
+}
+.blue {
+  background-color: #2aa3f3;
+}
+.teal {
+  background-color: #129687;
+  left: 150px;
+}
+.crimson {
+  background-color: #e71e65;
+  right: 0px;
+}
+.red {
+  background-color: #f1463b;
+  top: 150px;
+}
+.orange {
+  background-color: #fc5b29;
+  top: 150px;
+  left: 150px;
+}
+.violet {
+  background-color: #9c0ab0;
+  top: 150px;
+  right: 0px;
+}
+.green {
+  background-color: #4cb250;
+  bottom: 0px;
+}
+.gold {
+  background-color: #fcf03f;
+  bottom: 0px;
+  left: 150px;
+}
+.dodgerblue {
+  background-color: #368ff2;
+  bottom: 0px;
+  right: 0px;
+}

@@ -1,0 +1,14 @@
+.conteiner {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url(../images/grapefruit.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
