@@ -1,0 +1,130 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  font-family: 'Playfair Display', serif;
+  font-size: 14px;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 26px;
+}
+.visually-hidden:not(:focus):not(:active),
+input[type='checkbox'].visually-hidden,
+input[type='radio'].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.navigation {
+  width: 570px;
+  text-transform: uppercase;
+  color: #626262;
+  line-height: 24px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  margin-top: 72px;
+}
+.navigation-list {
+  list-style: none;
+  padding: 0;
+  font-size: 0;
+}
+.navigation-item {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+.lifestyle {
+  width: 190px;
+}
+.photodiary {
+  width: 188px;
+}
+.music {
+  width: 138px;
+}
+.navigation-item a {
+  display: block;
+  text-decoration: none;
+  height: 24px;
+  font-size: 14px;
+  color: #626262;
+}
+.navigation-item a:hover,
+.navigation-item a:focus {
+  cursor: pointer;
+  color: #03a9f4;
+}
+.conteiner {
+  width: 900px;
+  margin: 0 auto;
+  margin-bottom: 57px;
+}
+.conteiner-list {
+  list-style: none;
+  font-size: 0;
+  margin: 0;
+  padding: 0;
+}
+.conteiner-item {
+  width: 420px;
+  height: 490px;
+  display: inline-block;
+  margin-right: 60px;
+  margin-bottom: 130px;
+  font-size: 14px;
+  overflow: hidden;
+}
+.conteiner-item:nth-child(2n) {
+  margin-right: 0;
+}
+.conteiner-item:nth-last-child(-n + 2) {
+  margin-bottom: 0;
+}
+.conteiner-name {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #b4ad9e;
+  line-height: 21px;
+  margin-bottom: 25px;
+}
+.conteiner-item h2 {
+  font-size: 30px;
+  line-height: 45px;
+  color: #626262;
+  margin-bottom: 26px;
+}
+.conteiner-description {
+  line-height: 24px;
+  color: #626262;
+}
+.button {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 70px;
+  padding: 26px 32px;
+  font-size: 20px;
+  line-height: 24px;
+  color: #626262;
+  background: #fff;
+  border: 1px solid #626262;
+}
