@@ -146,6 +146,7 @@ input[type='radio'].visually-hidden {
 .products-offer {
   width: 255px;
   height: 282px;
+  overflow: hidden;
 }
 .products-description {
   width: 255px;
