@@ -5,20 +5,100 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Rochester&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <header>
-      <nav>
-        <ul>
-          <li><a>lifestyle</a></li>
-          <li><a>photodiary</a></li>
-          <li><a>music</a></li>
-          <li><a>travel</a></li>
+      <nav class="page-nav wrapper">
+        <a href="#" class="logo">Golden</a>
+        <ul class="nav-list">
+          <li><a href="#" class="nav-link">home</a></li>
+          <li><a href="#" class="nav-link">services</a></li>
+          <li><a href="#" class="nav-link">portfolio</a></li>
+          <li><a href="#" class="nav-link">about</a></li>
+          <li><a href="#" class="nav-link">contact</a></li>
         </ul>
       </nav>
     </header>
-    
+    <section class="services wrapper">
+      <h1 class="visually-hidden">Golden servises</h1>
+      <h2 class="services-title title">Servises</h2>
+      <p class="title-description">Proin iaculis purus consequat sem cure.</p>
+      <ul class="services-list">
+        <li class="services-item">
+          <h3 class="item-title basket">E-Commerce</h3>
+          <p class="item-description">
+            Proin iaculis purus consequat sem cure digni ssim. Donec porttitora
+            entum suscipit aenean rhoncus posuere odio in tincidunt.
+          </p>
+        </li>
+        <li class="services-item">
+          <h3 class="item-title laptop">Responsive Web</h3>
+          <p class="item-description">
+            Proin iaculis purus consequat sem cure digni ssim. Donec porttitora
+            entum suscipit aenean rhoncus posuere odio in tincidunt.
+          </p>
+        </li>
+        <li class="services-item">
+          <h3 class="item-title locked">Web security</h3>
+          <p class="item-description">
+            Proin iaculis purus consequat sem cure digni ssim. Donec porttitora
+            entum suscipit aenean rhoncus posuere odio in tincidunt.
+          </p>
+        </li>
+      </ul>
+    </section>
+    <footer class="footer">
+      <h2 class="footer-title title">Contact us</h2>
+      <p class="title-description">Proin iaculis purus consequat sem cure.</p>
+      <form action="#" class="footer-form wrapper">
+        <section class="form-signup">
+          <ul class="date-list">
+            <li>
+              <input
+                class="date-item date-form"
+                type="text"
+                name="name"
+                placeholder="YOUR NAME*"
+                required
+                autofocus
+              />
+            </li>
+            <li>
+              <input
+                class="date-item date-form"
+                type="EMAIL"
+                name="email"
+                placeholder="YOUR E-MAIL*"
+                required
+              />
+            </li>
+            <li>
+              <input
+                class="date-item"
+                type="text"
+                name="subject"
+                placeholder="SUBJECT"
+              />
+            </li>
+          </ul>
+          <textarea
+            class="message date-form"
+            name="message"
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="YOUR MESSAGE*"
+            required
+          ></textarea>
+        </section>
+        <button class="footer-button" type="submit">send message</button>
+      </form>
+    </footer>
   </body>
 </html>

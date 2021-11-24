@@ -134,9 +134,9 @@ input[type='radio'].visually-hidden {
 .banner-button {
   font-size: 100px;
   color: #ffffff;
-  line-height: 100px;
+  line-height: 102px;
   text-align: center;
-  border: hidden;
+  border: none;
   padding: 0;
   width: 104px;
   height: 104px;

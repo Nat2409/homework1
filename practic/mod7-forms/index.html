@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+  </head>
+  <body>
+    <form class="signup-form" action="#">
+      <input
+        type="text"
+        placeholder="Email..."
+        autofocus
+        name="email"
+        required
+      />
+      <input type="text" placeholder="Password..." name="pass" required />
+      <button type="submit">sign up</button>
+      <button type="reset">clear form</button>
+    </form>
+    <section>
+      <form class="profile-form" action="#">
+        <section class="custom">
+          <h2 class="">custom checkboxes</h2>
+          <ul class="custom-list">
+            <li>
+              <input
+                class="visually-hidden"
+                type="checkbox"
+                name="custom-check"
+                id="custom-check-1"
+              />
+              <label for="custom-check-1">custom check 1</label>
+            </li>
+            <li>
+              <input
+                class="visually-hidden"
+                type="checkbox"
+                name="custom-check"
+                id="custom-check-2"
+              />
+              <label for="custom-check-2">custom check 2</label>
+            </li>
+            <li>
+              <input
+                class="visually-hidden"
+                type="checkbox"
+                name="custom-check"
+                id="custom-check-3"
+              />
+              <label for="custom-check-3">custom check 3</label>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>personal data</h2>
+          <ul>
+            <li>
+              <input
+                type="email"
+                placeholder="Email..."
+                autofocus
+                name="email"
+                required
+              />
+            </li>
+            <li>
+              <input
+                type="password"
+                placeholder="Password..."
+                name="pass"
+                required
+              />
+            </li>
+            <li>
+              <textarea name="" id="" cols="30" rows="10"></textarea>
+            </li>
+          </ul>
+        </section>
+        <fieldset>
+          <legend>Options</legend>
+          <div><input type="checkbox" name="" id="" /><span>1</span></div>
+          <div><input type="checkbox" name="" id="" /><span>2</span></div>
+          <div><input type="checkbox" name="" id="" /><span>3</span></div>
+        </fieldset>
+
+        <section>
+          <h2>screen size</h2>
+          <ul class="screen-size-list">
+            <li>
+              <input
+                type="checkbox"
+                name="screen-size"
+                value="13"
+                id="screen-size-13"
+                checked
+              />
+              <label for="screen-size-13"> 13"</label>
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                name="screen-size"
+                value="15"
+                id="screen-size-15"
+              />
+              <label for="screen-size-15"> 15"</label>
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                name="screen-size"
+                value="17"
+                id="screen-size-17"
+              />
+              <label for="screen-size-17"> 17"</label>
+            </li>
+            <li>
+              <label>
+                <input
+                  type="checkbox"
+                  name="screen-size"
+                  value="19"
+                  id=""
+                  checked
+                />
+                19"
+              </label>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2>theme</h2>
+          <ul class="theme-list">
+            <li>
+              <input type="radio" name="theme-type" id="" value="default" />
+              <label for=""> default</label>
+            </li>
+            <li>
+              <input type="radio" name="theme-type" id="" value="dark" />
+              <label for=""> dark</label>
+            </li>
+            <li>
+              <input type="radio" name="theme-type" id="" value="light" />
+              <label for=""> light</label>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2>City</h2>
+          <select name="city" id="" multiple>
+            <option value="kyiv">Киев</option>
+            <option value="kharkov">Харьков</option>
+            <option value="gonduras">Гондурас</option>
+          </select>
+        </section>
+
+        <button type="submit">sign up</button>
+        <button type="reset">clear form</button>
+      </form>
+    </section>
+  </body>
+</html>

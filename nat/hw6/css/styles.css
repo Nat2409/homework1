@@ -1,0 +1,324 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.visually-hidden:not(:focus):not(:active),
+input[type='checkbox'].visually-hidden,
+input[type='radio'].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Montserrat', sans-serif;
+  padding-top: 28px;
+}
+nav {
+  display: flex;
+  width: 1200px;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  display: block;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: capitalize;
+  word-spacing: -8px;
+  text-decoration: none;
+  color: #95e1d3;
+}
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  width: 490px;
+  justify-content: space-between;
+}
+.nav-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+  color: #95e1d3;
+  transition: color 0.2s linear;
+  transition: border-bottom 0.2s linear;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  cursor: pointer;
+  color: #f38181;
+  border-bottom: 3px solid #f38181;
+  padding-bottom: 10px;
+}
+.pre-tittle {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  color: #333333;
+  text-align: center;
+  padding-top: 118px;
+  margin: 0;
+}
+.tittle {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
+  color: #333333;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  padding-top: 20px;
+}
+.tittle::after {
+  display: block;
+  content: '';
+  width: 60px;
+  height: 3px;
+  background-color: #f38181;
+  margin: 42px auto 64px auto;
+}
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 1200px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.services-item {
+  width: 382px;
+  margin-bottom: 100px;
+  padding-left: 82px;
+  background-position: 25px top;
+  background-repeat: no-repeat;
+}
+.services-item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+.alarm {
+  background-image: url(../img/ALARM.png);
+}
+.line-graph {
+  background-image: url(../img/LINE-GRAPH.png);
+}
+.computer {
+  background-image: url(../img/COMPUTER\ _\ OK.png);
+}
+.book {
+  background-image: url(../img/BOOK.png);
+}
+.home {
+  background-image: url(../img/HOME.png);
+}
+.image {
+  background-image: url(../img/IMAGE.png);
+}
+.services-title {
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #333333;
+  text-transform: uppercase;
+}
+.services-paragraf {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #999999;
+}
+.team {
+  padding-bottom: 86px;
+  width: 1200px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.team-paragraf {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #999999;
+  text-align: center;
+  padding: 0 20px 95px 20px;
+  margin: 0 auto;
+  width: 980px;
+}
+.team-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+}
+.team-member {
+  position: relative;
+  width: 380px;
+  height: 470px;
+  background-color: #95e1d3;
+}
+.member-photo {
+  transition: transform 0.2s linear;
+}
+.team-social-conteiner {
+  position: absolute;
+  top: 0;
+  width: 380px;
+  height: 470px;
+  transition: transform 0.2s linear;
+  background: linear-gradient(
+    90deg,
+    rgba(252, 227, 138, 0) 0%,
+    rgba(243, 129, 129, 0) 100%
+  );
+}
+.team-member:hover .member-photo {
+  transform: translate(-10px, -10px);
+}
+.team-member:hover .team-social-conteiner {
+  background: linear-gradient(
+    90deg,
+    rgba(252, 227, 138, 0.8) 0%,
+    rgba(243, 129, 129, 0.8) 100%
+  );
+  transform: translate(-10px, -10px);
+}
+.team-member:hover .social-link {
+  opacity: 1;
+}
+.team-social {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 227px;
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+}
+.social-link {
+  display: block;
+  width: 56px;
+  height: 56px;
+  background-color: #fce38a;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: background-color 0.2s linear;
+}
+.social-link:hover,
+.social-link:focus {
+  cursor: pointer;
+  background-color: #95e1d3;
+}
+.facebook {
+  background-image: url(../img/facebook.png);
+}
+.twitter {
+  background-image: url(../img/twitter.png);
+}
+.pinterest {
+  background-image: url(../img/pinterest.png);
+}
+.instagram {
+  background-image: url(../img/instagram.png);
+}
+.team-name {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #333333;
+  text-align: center;
+  margin: 0;
+  padding-top: 29px;
+}
+.team-occupation {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 300;
+  font-style: italic;
+  text-transform: capitalize;
+  color: #999999;
+  text-align: center;
+  margin: 0;
+  padding-top: 12px;
+}
+.footer {
+  width: 1200px;
+  display: flex;
+  padding: 10px 0 10px 0;
+  font-family: 'Montserrat', sans-serif;
+}
+.footer-paragraf {
+  padding: 0;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 42px;
+  color: #333333;
+  vertical-align: middle;
+}
+.footer-span {
+  color: #f38181;
+}
+.footer-input {
+  width: 227px;
+  height: 42px;
+  padding-left: 12px;
+  margin-left: auto;
+  border: 1px solid #e5e5e5;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 15px;
+  line-height: 24px;
+}
+.footer-button {
+  width: 150px;
+  height: 42px;
+  border: none;
+  background-color: #95e1d3;
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+}

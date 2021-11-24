@@ -1,0 +1,51 @@
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.card {
+  position: relative;
+  margin: 0 auto;
+  border: 2px solid #424242;
+  padding: 10px;
+  width: 270px;
+  text-align: center;
+}
+
+.card-button {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: inline-block;
+  border: none;
+  padding: 0;
+  margin: 0;
+  height: 60px;
+  width: 60px;
+  background-image: url(../images/heart.svg);
+  background-size: contain;
+  background-color: transparent;
+  cursor: pointer;
+}
+.card-button:hover {
+  background-image: url(../images/heart-red.png);
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type='checkbox'].visually-hidden,
+input[type='radio'].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

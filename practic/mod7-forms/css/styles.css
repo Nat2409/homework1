@@ -1,0 +1,105 @@
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  height: 200px;
+  /* background-color: blue; */
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
+  margin: 100px auto;
+  padding: 20px;
+  background-image: url('https://as2.ftcdn.net/v2/jpg/02/96/77/41/1000_F_296774199_DKirFGYBG8lUifNPi65rdVIaA1pPhZLk.jpg');
+  background-size: contain;
+}
+.signup-form input {
+  border: 0;
+  border-bottom: 2px solid teal;
+}
+.signup-form input:focus {
+  outline-color: red;
+}
+.profile-form {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  height: 800px;
+  /* background-color: blue; */
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
+  margin: 100px auto;
+  padding: 20px;
+}
+.profile-form input {
+  border: 0;
+  border-bottom: 2px solid darkgrey;
+  margin-bottom: 10px;
+}
+.profile-form input[type='email'] {
+  background-color: rosybrown;
+}
+.profile-form input[type='email']:valid,
+.profile-form input[type='password']:valid {
+  border-color: rgb(235, 57, 155);
+}
+.profile-form input[type='email']:invalid,
+.profile-form input[type='password']:invalid {
+  border-color: red;
+}
+.profile-form input[name='pass'] {
+  background-color: rgb(53, 123, 163);
+}
+.profile-form input::placeholder {
+  color: teal;
+  text-decoration: line-through;
+}
+.profile-form input:focus {
+  outline: none;
+  border-color: teal;
+}
+textarea {
+  resize: none;
+}
+.screen-size-list input:checked {
+  width: 20px;
+  height: 20px;
+}
+.screen-size-list input:checked + label {
+  background-color: blueviolet;
+}
+
+.custom-list label {
+  outline: 1px solid gray;
+  cursor: pointer;
+}
+.custom-list label::before {
+  display: inline-block;
+  content: '';
+  width: 15px;
+  height: 15px;
+  border: 2px solid darkred;
+  margin-right: 10px;
+  /* border-radius: 50%; */
+}
+.custom-list input[type='checkbox']:checked + label::before {
+  /* background: url('../images/mail.svg'); */
+  /* background-color: deeppink; */
+  background-image: url('https://as2.ftcdn.net/v2/jpg/02/96/77/41/1000_F_296774199_DKirFGYBG8lUifNPi65rdVIaA1pPhZLk.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.visually-hidden:not(:focus):not(:active),
+input[type='checkbox'].visually-hidden,
+input[type='radio'].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
