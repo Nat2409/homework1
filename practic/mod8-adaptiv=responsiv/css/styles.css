@@ -1,0 +1,47 @@
+/* @viewport {
+  width: device-width;
+  zoom: 1;
+} */
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+/* @media (min-width: 400px) {
+  body {
+    background-color: gray;
+  }
+}
+@media (max-width: 700px) {
+  body {
+    background-color: teal;
+  }
+}
+@media (max-width: 1000px) {
+  body {
+    background-color: palevioletred;
+  }
+}
+@media screen and (orientation: portrait) {
+  body {
+    background-color: teal;
+  }
+}
+@media screen and (orientation: landscape) {
+  body {
+    background-color: violet;
+  }
+} */

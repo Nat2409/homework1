@@ -208,11 +208,13 @@ input[type='radio'].visually-hidden {
 .date-item {
   width: 100%;
   height: 54px;
+  padding-left: 10px;
 }
 .message {
   width: 455px;
   height: 212px;
   resize: none;
+  padding-left: 10px;
 }
 .date-form:valid {
   outline: 1px solid green;
@@ -234,4 +236,7 @@ input[type='radio'].visually-hidden {
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
+}
+.footer-button:hover {
+  cursor: pointer;
 }
