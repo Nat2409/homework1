@@ -1,10 +1,19 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 html {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
+  -webkit-box-sizing: inherit;
   box-sizing: inherit;
 }
 
@@ -24,6 +33,20 @@ img {
   max-width: 1920px;
   height: 1000px;
   margin: 0 auto;
+  background-image: -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      from(rgba(252, 227, 138, 0.9)),
+      to(rgba(243, 129, 129, 0.9))
+    ),
+    url(../img/Background.png);
+  background-image: -o-linear-gradient(
+      bottom,
+      rgba(252, 227, 138, 0.9) 0%,
+      rgba(243, 129, 129, 0.9) 100%
+    ),
+    url(../img/Background.png);
   background-image: linear-gradient(
       to top,
       rgba(252, 227, 138, 0.9) 0%,
@@ -43,7 +66,11 @@ img {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 .paragraf {
@@ -67,9 +94,15 @@ img {
   padding-top: 28px;
 }
 .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 1200px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 .logo {
@@ -90,7 +123,11 @@ img {
   color: #ffffff;
   padding-bottom: 10px;
   border-bottom: 3px solid transparent;
+  -webkit-transition: color 0.2s linear;
+  -o-transition: color 0.2s linear;
   transition: color 0.2s linear;
+  -webkit-transition: border-bottom 0.2s linear;
+  -o-transition: border-bottom 0.2s linear;
   transition: border-bottom 0.2s linear;
 }
 
@@ -130,7 +167,6 @@ img {
   font-size: 150px;
   line-height: 140px;
   color: #ffffff;
-  margin: 0 auto;
   margin-bottom: 96px;
 }
 .main__link {
@@ -166,6 +202,7 @@ img {
   margin: 42px auto 64px auto;
 }
 .services__list {
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   width: 1200px;
 }
@@ -240,14 +277,34 @@ img {
   background-color: #95e1d3;
 }
 .team__photo {
+  -webkit-transition: -webkit-transform 0.2s linear;
+  transition: -webkit-transform 0.2s linear;
+  -o-transition: transform 0.2s linear;
   transition: transform 0.2s linear;
+  transition: transform 0.2s linear, -webkit-transform 0.2s linear;
 }
 .social {
   position: absolute;
   top: 0;
   width: 380px;
   height: 470px;
+  -webkit-transition: -webkit-transform 0.2s linear;
+  transition: -webkit-transform 0.2s linear;
+  -o-transition: transform 0.2s linear;
   transition: transform 0.2s linear;
+  transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(rgba(252, 227, 138, 0)),
+    to(rgba(243, 129, 129, 0))
+  );
+  background: -o-linear-gradient(
+    left,
+    rgba(252, 227, 138, 0) 0%,
+    rgba(243, 129, 129, 0) 100%
+  );
   background: linear-gradient(
     90deg,
     rgba(252, 227, 138, 0) 0%,
@@ -255,14 +312,30 @@ img {
   );
 }
 .team__member:hover .team__photo {
+  -webkit-transform: translate(-10px, -10px);
+  -ms-transform: translate(-10px, -10px);
   transform: translate(-10px, -10px);
 }
 .team__member:hover .social {
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(rgba(252, 227, 138, 0.9)),
+    to(rgba(243, 129, 129, 0.9))
+  );
+  background: -o-linear-gradient(
+    bottom,
+    rgba(252, 227, 138, 0.9) 0%,
+    rgba(243, 129, 129, 0.9) 100%
+  );
   background: linear-gradient(
     to top,
     rgba(252, 227, 138, 0.9) 0%,
     rgba(243, 129, 129, 0.9) 100%
   );
+  -webkit-transform: translate(-10px, -10px);
+  -ms-transform: translate(-10px, -10px);
   transform: translate(-10px, -10px);
 }
 .team__member:hover .social__link {
@@ -272,6 +345,8 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   width: 227px;
   height: 56px;
@@ -283,6 +358,8 @@ img {
   height: 56px;
   background-color: #fce38a;
   opacity: 0;
+  -webkit-transition: background-color 0.2s linear;
+  -o-transition: background-color 0.2s linear;
   transition: background-color 0.2s linear;
 }
 .social__img {
@@ -294,6 +371,8 @@ img {
   background-repeat: no-repeat;
   background-size: contain;
   fill: #f38181;
+  -webkit-transition: fill 0.2s linear;
+  -o-transition: fill 0.2s linear;
   transition: fill 0.2s linear;
 }
 .social__link:hover,
@@ -330,6 +409,8 @@ img {
 }
 .footer {
   width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 10px 0 10px 0;
   font-family: 'Montserrat', sans-serif;
@@ -364,8 +445,25 @@ img {
   font-weight: 700;
   text-transform: uppercase;
 }
-@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media (-webkit-min-device-pixel-ratio: 2),
+  (-o-min-device-pixel-ratio: 2/1),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
   .wrapper {
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from(rgba(252, 227, 138, 0.8)),
+        to(rgba(243, 129, 129, 0.8))
+      ),
+      url(../img/Background@2x.png);
+    background-image: -o-linear-gradient(
+        left,
+        rgba(252, 227, 138, 0.8) 0%,
+        rgba(243, 129, 129, 0.8) 100%
+      ),
+      url(../img/Background@2x.png);
     background-image: linear-gradient(
         90deg,
         rgba(252, 227, 138, 0.8) 0%,
