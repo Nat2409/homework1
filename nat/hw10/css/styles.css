@@ -46,19 +46,19 @@ img {
   display: flex;
   justify-content: space-between;
 }
-
+.paragraf {
+  margin: 0;
+}
 .pre-title {
   font-family: 'Kaushan Script', cursive;
   font-weight: 400;
   text-align: center;
-  margin: 0;
 }
 .title {
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
-  margin: 0;
 }
 .container {
   max-width: 1200px;
@@ -199,7 +199,6 @@ img {
 }
 .services__title {
   padding: 0;
-  margin: 0;
   margin-bottom: 14px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
@@ -214,7 +213,6 @@ img {
   font-size: 15px;
   line-height: 24px;
   color: #999999;
-  margin: 0;
 }
 .team {
   padding-bottom: 86px;
@@ -317,7 +315,6 @@ img {
   text-transform: uppercase;
   color: #333333;
   text-align: center;
-  margin: 0;
   padding-top: 29px;
 }
 .team__occupation {
@@ -329,7 +326,6 @@ img {
   text-transform: capitalize;
   color: #999999;
   text-align: center;
-  margin: 0;
   padding-top: 12px;
 }
 .footer {
@@ -339,7 +335,6 @@ img {
   font-family: 'Montserrat', sans-serif;
 }
 .footer__paragraf {
-  margin: 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 42px;
