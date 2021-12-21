@@ -1,0 +1,52 @@
+.team {
+  padding-bottom: 86px;
+  width: 1200px;
+  border-bottom: 1px solid $color-sixth;
+}
+.team__paragraf {
+  font-family: $font-family-third;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: $color-fifth;
+  text-align: center;
+  padding: 0 20px 95px 20px;
+  margin: 0 auto;
+  width: 980px;
+}
+.team__list {
+  width: 1200px;
+}
+.team__member {
+  position: relative;
+  width: 380px;
+  height: 470px;
+  background-color: $color-seventh;
+}
+.team__photo {
+  transition: transform 0.2s linear;
+}
+.team__member:hover .team__photo {
+  transform: translate(-10px, -10px);
+}
+.team__name {
+  font-family: $font-family-first;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $color-third;
+  text-align: center;
+  padding-top: 29px;
+}
+.team__occupation {
+  font-family: $font-family-third;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 300;
+  font-style: italic;
+  text-transform: capitalize;
+  color: $color-fifth;
+  text-align: center;
+  padding-top: 12px;
+}

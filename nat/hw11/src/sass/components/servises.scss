@@ -1,0 +1,31 @@
+.services__list {
+  flex-wrap: wrap;
+  width: 1200px;
+}
+.services__item {
+  width: 382px;
+  margin-bottom: 100px;
+  padding-left: 82px;
+  background-position: 25px top;
+  background-repeat: no-repeat;
+}
+.services__item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+.services__title {
+  padding: 0;
+  margin-bottom: 14px;
+  font-family: $font-family-first;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: $color-third;
+  text-transform: uppercase;
+}
+.services__paragraf {
+  font-family: $font-family-third;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: $color-fifth;
+}

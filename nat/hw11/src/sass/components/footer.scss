@@ -1,0 +1,16 @@
+.footer {
+  width: 1200px;
+  display: flex;
+  padding: 10px 0 10px 0;
+  font-family: $font-family-first;
+}
+.footer__paragraf {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 42px;
+  color: $color-third;
+  vertical-align: middle;
+}
+.footer__span {
+  color: $color-fourth;
+}

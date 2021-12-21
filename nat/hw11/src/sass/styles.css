@@ -1,0 +1,74 @@
+.button__svg {
+  width: 18px;
+  height: 18px;
+  fill: $color-first;
+}
+.nav__button:hover .button__svg {
+  fill: $color-second;
+}
+.nav__button:focus .button__svg {
+  fill: $color-second;
+}
+
+.alarm {
+  background-image: url(../img/ALARM.png);
+}
+.line-graph {
+  background-image: url(../img/LINE-GRAPH.png);
+}
+.computer {
+  background-image: url(../img/COMPUTER\ _\ OK.png);
+}
+.book {
+  background-image: url(../img/BOOK.png);
+}
+.home {
+  background-image: url(../img/HOME.png);
+}
+.image {
+  background-image: url(../img/IMAGE.png);
+}
+
+.team__member:hover .social {
+  background: linear-gradient(
+    to top,
+    rgba(252, 227, 138, 0.9) 0%,
+    rgba(243, 129, 129, 0.9) 100%
+  );
+  transform: translate(-10px, -10px);
+}
+.team__member:hover .social__link {
+  opacity: 1;
+}
+
+@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .wrapper {
+    background-image: linear-gradient(
+        90deg,
+        rgba(252, 227, 138, 0.8) 0%,
+        rgba(243, 129, 129, 0.8) 100%
+      ),
+      url(../img/Background@2x.png);
+  }
+  .logo {
+    background-image: url(../img/MoGo@2x.png);
+  }
+  .alarm {
+    background-image: url(../img/ALARM@2x.png);
+  }
+  .line-graph {
+    background-image: url(../img/LINE-GRAPH@2x.png);
+  }
+  .computer {
+    background-image: url(../img/COMPUTER\ _\ OK@2x.png.png);
+  }
+  .book {
+    background-image: url(../img/BOOK@2x.png);
+  }
+  .home {
+    background-image: url(../img/HOME@2x.png);
+  }
+  .image {
+    background-image: url(../img/IMAGE@2x.png);
+  }
+}

@@ -1,0 +1,20 @@
+.title {
+  font-family: $font-family-first;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+.title--size {
+  font-size: 30px;
+  line-height: 36px;
+  color: $color-third;
+  padding-top: 20px;
+}
+.title--size::after {
+  display: block;
+  content: '';
+  width: 60px;
+  height: 3px;
+  background-color: $color-fourth;
+  margin: 42px auto 64px auto;
+}

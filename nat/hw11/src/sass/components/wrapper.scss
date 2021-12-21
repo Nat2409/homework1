@@ -1,0 +1,14 @@
+.wrapper {
+  max-width: 1920px;
+  height: 1000px;
+  margin: 0 auto;
+  background-image: linear-gradient(
+      to top,
+      rgba(252, 227, 138, 0.9) 0%,
+      rgba(243, 129, 129, 0.9) 100%
+    ),
+    url(../img/Background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

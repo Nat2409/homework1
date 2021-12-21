@@ -1,0 +1,20 @@
+.subscribe__input {
+  width: 227px;
+  height: 42px;
+  padding-left: 12px;
+  margin-left: auto;
+  border: 1px solid $color-sixth;
+  font-family: $font-family-third;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 15px;
+  line-height: 24px;
+}
+.subscribe__button {
+  width: 150px;
+  height: 42px;
+  background-color: $color-seventh;
+  color: $color-first;
+  font-weight: 700;
+  text-transform: uppercase;
+}
