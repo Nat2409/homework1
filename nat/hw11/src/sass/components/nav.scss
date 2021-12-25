@@ -33,11 +33,11 @@
 
 .nav__button {
   @include bg-image;
-  width: 18px;
-  height: 18px;
+  // width: 18px;
+  // height: 18px;
   // background-position: center;
   // background-repeat: no-repeat;
-  // background-size: contain;
+  background-size: contain;
 
   &:hover .button__svg {
     fill: $color-yellow;
