@@ -1,20 +1,23 @@
 .title {
-  font-family: $font-family-first;
+  @extend %margin;
+  font-family: $font-family-main;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
 }
 .title--size {
-  font-size: 30px;
-  line-height: 36px;
-  color: $color-third;
+  @include font-settings(30px, 36px);
+  // font-size: 30px;
+  // line-height: 36px;
+  color: $text-color-dark;
   padding-top: 20px;
-}
-.title--size::after {
-  display: block;
-  content: '';
-  width: 60px;
-  height: 3px;
-  background-color: $color-fourth;
-  margin: 42px auto 64px auto;
+
+  &::after {
+    display: block;
+    content: '';
+    width: 60px;
+    height: 3px;
+    background-color: $color-pink;
+    margin: 42px auto 64px auto;
+  }
 }

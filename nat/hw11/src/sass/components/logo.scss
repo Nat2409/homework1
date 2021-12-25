@@ -1,7 +1,14 @@
 .logo {
+  @extend %link;
   width: 86px;
   height: 43px;
-  background-image: url(../img/MoGo.png);
+  background-image: url(../images/MoGo.png);
   background-position: top;
   background-repeat: no-repeat;
+
+  @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .logo {
+      background-image: url(../images/MoGo@2x.png);
+    }
+  }
 }

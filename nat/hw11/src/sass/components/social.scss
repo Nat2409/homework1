@@ -11,6 +11,8 @@
   );
 }
 .social__list {
+  @extend %list;
+  @include flex;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -20,32 +22,36 @@
   margin: 0 auto;
 }
 .social__link {
+  @extend %link;
   padding-top: 15px;
   width: 56px;
   height: 56px;
-  background-color: $color-second;
+  background-color: $color-yellow;
   opacity: 0;
   transition: background-color 0.2s linear;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    background-color: $color-pink;
+  }
+
+  &:hover .social__img {
+    fill: $text-color-white;
+  }
+  &:focus .social__img {
+    fill: $text-color-white;
+  }
 }
 .social__img {
+  @include bg-image;
   display: block;
   width: 26px;
   height: 26px;
   margin: auto;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  fill: $color-fourth;
+  // background-position: center;
+  // background-repeat: no-repeat;
+  // background-size: contain;
+  fill: $color-pink;
   transition: fill 0.2s linear;
-}
-.social__link:hover,
-.social__link:focus {
-  cursor: pointer;
-  background-color: $color-fourth;
-}
-.social__link:hover .social__img {
-  fill: $color-first;
-}
-.social__link:focus .social__img {
-  fill: $color-first;
 }

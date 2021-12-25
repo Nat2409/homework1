@@ -1,16 +1,20 @@
 .footer {
-  width: 1200px;
-  display: flex;
+  @extend %container;
+  @include flex;
+  // width: 1200px;
+  // display: flex;
+  // justify-content: space-between;
   padding: 10px 0 10px 0;
-  font-family: $font-family-first;
 }
 .footer__paragraf {
+  @extend %margin;
+  @include font-settings(14px, 42px);
   font-weight: 400;
-  font-size: 14px;
-  line-height: 42px;
-  color: $color-third;
+  // font-size: 14px;
+  // line-height: 42px;
+  color: $text-color-dark;
   vertical-align: middle;
 }
 .footer__span {
-  color: $color-fourth;
+  color: $color-pink;
 }

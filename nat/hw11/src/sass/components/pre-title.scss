@@ -1,11 +1,13 @@
 .pre-title {
-  font-family: $font-family-second;
+  @extend %margin;
+  font-family: $font-family-pre-title;
   font-weight: 400;
   text-align: center;
 }
 .pre-title--size {
-  font-size: 24px;
-  line-height: 29px;
-  color: $color-third;
+  @include font-settings(24px, 29px);
+  // font-size: 24px;
+  // line-height: 29px;
+  color: $text-color-dark;
   padding-top: 118px;
 }

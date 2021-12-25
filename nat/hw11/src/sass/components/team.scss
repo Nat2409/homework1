@@ -1,52 +1,73 @@
 .team {
+  @extend %container;
   padding-bottom: 86px;
-  width: 1200px;
-  border-bottom: 1px solid $color-sixth;
+  // width: 1200px;
+  border-bottom: 1px solid $border-color;
 }
 .team__paragraf {
-  font-family: $font-family-third;
+  @include font-settings(15px, 24px);
+  font-family: $font-family-secondary;
   font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
-  color: $color-fifth;
+  // font-size: 15px;
+  // line-height: 24px;
+  color: $text-color-lighter;
   text-align: center;
   padding: 0 20px 95px 20px;
   margin: 0 auto;
   width: 980px;
 }
 .team__list {
+  @extend %list;
+  @include flex;
   width: 1200px;
 }
 .team__member {
   position: relative;
   width: 380px;
   height: 470px;
-  background-color: $color-seventh;
+  background-color: $bg-color-light-green;
+
+  &:hover .team__photo {
+    transform: translate(-10px, -10px);
+  }
+  &:hover .social {
+    background: linear-gradient(
+      to top,
+      rgba(252, 227, 138, 0.9) 0%,
+      rgba(243, 129, 129, 0.9) 100%
+    );
+    transform: translate(-10px, -10px);
+  }
+  &:hover .social__link {
+    opacity: 1;
+  }
 }
 .team__photo {
   transition: transform 0.2s linear;
 }
-.team__member:hover .team__photo {
-  transform: translate(-10px, -10px);
-}
+
 .team__name {
-  font-family: $font-family-first;
-  font-size: 14px;
-  line-height: 17px;
+  @extend %margin;
+  @include font-settings(14px, 17px);
+  // font-family: $font-family-main;
+  // font-size: 14px;
+  // line-height: 17px;
   font-weight: 400;
   text-transform: uppercase;
-  color: $color-third;
+  color: $text-color-dark;
   text-align: center;
   padding-top: 29px;
 }
 .team__occupation {
-  font-family: $font-family-third;
-  font-size: 15px;
-  line-height: 24px;
+  @extend %margin;
+  @include font-settings(15px, 24px);
+  font-family: $font-family-secondary;
+  // font-size: 15px;
+  // line-height: 24px;
   font-weight: 300;
   font-style: italic;
   text-transform: capitalize;
-  color: $color-fifth;
+  color: $text-color-lighter;
   text-align: center;
   padding-top: 12px;
 }
