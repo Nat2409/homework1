@@ -1,0 +1,18 @@
+.logo {
+  display: inline-block;
+}
+.logo__name {
+  font-weight: ExtraBold;
+  font-size: 15px;
+  line-height: 80px;
+  color: $main-color;
+}
+.logo__descr {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 6px;
+  line-height: 30px;
+}
+.logo__descr--color {
+  color: $secondary-color;
+}

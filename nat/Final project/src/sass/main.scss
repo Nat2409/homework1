@@ -2,5 +2,30 @@
  * Все паршалы импортировать в этот файл
  */
 
-@import 'normalize.scss';
-@import 'base.scss';
+@import 'helpers/variables';
+@import 'helpers/placeholders';
+@import 'helpers/mixins';
+@import 'helpers/exstras';
+@import 'normalize';
+@import 'base';
+
+// components
+
+@import 'components/wrapper';
+@import 'components/page-header';
+@import 'components/page-nav';
+@import 'components/button';
+@import 'components/logo';
+@import 'components/offer';
+@import 'components/value';
+@import 'components/helping';
+@import 'components/description';
+@import 'components/program';
+@import 'components/exellence';
+@import 'components/teacher';
+@import 'components/garanty';
+@import 'components/review';
+@import 'components/registration';
+@import 'components/form';
+@import 'components/contacts';
+@import 'components/rights';

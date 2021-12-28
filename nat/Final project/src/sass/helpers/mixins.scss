@@ -1,0 +1,15 @@
+@mixin font-settings($size, $height) {
+  font-size: $size;
+  line-height: $height;
+}
+
+@mixin flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin bg-image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
