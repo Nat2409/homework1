@@ -1,18 +1,31 @@
 .logo {
-  display: inline-block;
+  @extend %link;
+  width: 80px;
+  height: 34px;
 }
 .logo__name {
-  font-weight: ExtraBold;
+  font-weight: 800;
   font-size: 15px;
-  line-height: 80px;
-  color: $main-color;
+  line-height: 22px;
+  color: $logo-color;
 }
 .logo__descr {
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
   font-size: 6px;
-  line-height: 30px;
+  // line-height: 30px;
+  text-align: center;
+  vertical-align: top;
+  color: $logo-color;
+  text-align: justify;
 }
 .logo__descr--color {
   color: $secondary-color;
+}
+.logo__svg {
+  display: inline-block;
+  width: 15px;
+  height: 22px;
+  fill: $secondary-color;
+  vertical-align: middle;
 }

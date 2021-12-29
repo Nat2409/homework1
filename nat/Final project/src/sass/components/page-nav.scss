@@ -1,0 +1,20 @@
+.page-nav {
+  @extend %container;
+  display: flex;
+  justify-content: space-between;
+}
+.page-nav__button {
+  width: 24px;
+  height: 14px;
+  align-self: bottom;
+}
+.page-nav__line {
+  padding: 0;
+  margin: 0;
+  // outline: none;
+  margin-bottom: 2px;
+  background-color: #18191d;
+  width: 24px;
+  height: 2px;
+  border: none;
+}

@@ -1,7 +1,6 @@
 %container {
-  max-width: 1200px;
+  width: 280px;
   margin: 0 auto;
-  font-family: $font-family-main;
 }
 
 %link {
@@ -9,8 +8,9 @@
   text-decoration: none;
 }
 
-%margin {
+%backdown {
   margin: 0;
+  padding: 0;
 }
 
 %list {

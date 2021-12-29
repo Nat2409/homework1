@@ -1,0 +1,32 @@
+.offer {
+  @extend %container;
+  height: 639px;
+  padding-top: 58px;
+  // background-image: url(./images/photo/offer-img-top.png);
+  // url(./images/photo/offer-img.png), url(./images/background/bg-offer.png);
+}
+.offer__title {
+  @extend %backdown;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 29px;
+  color: $main-color;
+  margin-bottom: 30px;
+}
+.offer__text {
+  @extend %backdown;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 21px;
+  color: $main-color;
+  margin-bottom: 36px;
+}
+.offer__text--light {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 21px;
+  color: $text-color-light;
+}
+.offer__text--color {
+  color: $secondary-color;
+}

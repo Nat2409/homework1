@@ -1,0 +1,19 @@
+.button {
+  display: block;
+  border: none;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+.button__subscribe {
+  margin: 0 auto;
+  width: 250px;
+  height: 48px;
+  background-color: $secondary-color;
+  color: $text-color-white;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 700;
+  font-family: Tahoma, sans-serif;
+}
