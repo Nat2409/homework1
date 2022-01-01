@@ -3,21 +3,40 @@
 }
 .value__list {
   @extend %list;
+  width: 208px;
   color: $main-color;
   font-size: 13px;
-  line-height: 20px;
-  font-weight: 700;
+  letter-spacing: 0.05em;
+  font-weight: bold;
+  margin: 0 auto;
+  margin-bottom: 52px;
 }
 .value__item {
-  &::before {
-    display: inline-block;
-    content: '';
-    border: 1px solid $secondary-color;
-    width: 59px;
-    height: 59px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-image: url(../images/svg/female-student.svg);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  &:not(:last-child) {
+    margin-bottom: 24px;
   }
+}
+.value__box {
+  width: 56px;
+  height: 56px;
+  border: 2px solid $secondary-color;
+  border-right-style: dashed;
+  padding: 8px 5px;
+}
+.value__svg {
+  display: block;
+  width: 40px;
+  height: 40px;
+  // padding: 18px;
+
+  fill: $secondary-color;
+}
+.value__paragraf {
+  @extend %backdown;
+  width: 134px;
+  height: 56px;
 }

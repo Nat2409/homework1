@@ -1,19 +1,19 @@
 .logo {
   @extend %link;
-  width: 80px;
+  width: 85px;
   height: 34px;
 }
 .logo__name {
   font-weight: 800;
   font-size: 15px;
-  line-height: 22px;
+  letter-spacing: 0.05em;
   color: $logo-color;
 }
 .logo__descr {
   font-weight: 700;
   text-transform: uppercase;
   font-size: 6px;
-  // line-height: 30px;
+  letter-spacing: 0.13em;
   text-align: center;
   vertical-align: top;
   color: $logo-color;

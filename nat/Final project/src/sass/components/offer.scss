@@ -7,9 +7,8 @@
 }
 .offer__title {
   @extend %backdown;
-  font-size: 20px;
-  font-weight: 800;
-  line-height: 29px;
+  @extend %title;
+  letter-spacing: 0.03em;
   color: $main-color;
   margin-bottom: 30px;
 }
@@ -17,14 +16,12 @@
   @extend %backdown;
   font-size: 15px;
   font-weight: 700;
-  line-height: 21px;
+  letter-spacing: 0.05em;
   color: $main-color;
   margin-bottom: 36px;
 }
 .offer__text--light {
-  font-size: 15px;
   font-weight: 500;
-  line-height: 21px;
   color: $text-color-light;
 }
 .offer__text--color {
