@@ -1,15 +1,69 @@
 .description {
   @extend %container;
+  margin-bottom: 53px;
 }
 .description__title {
+  @extend %title;
+  @extend %backdown;
+  color: $main-color;
+  letter-spacing: 0.05em;
+  text-align: center;
+  padding-top: 50px;
+  margin-bottom: 40px;
 }
 .description__list {
+  @extend %list;
 }
 .description__item {
+  width: 280px;
+  box-shadow: 4px 6.928px 23.68px 8.32px rgba(29, 29, 27, 0.11);
+  padding: 30px 35px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  &:hover {
+    background-color: $secondary-color;
+  }
+  &:hover .description__icon {
+    fill: $text-color-white;
+  }
+  &:hover .description__caption {
+    color: $text-color-white;
+  }
+  &:hover .description__caption::after {
+    background-color: $text-color-white;
+  }
+  &:hover .description__text {
+    color: $text-color-white;
+  }
 }
 .description__icon {
+  width: 50px;
+  height: 45px;
+  fill: $secondary-color;
+  margin: 0 auto;
 }
 .description__caption {
+  @extend %title;
+  font-size: 13px;
+  font-weight: 700;
+  color: $text-color-dark;
+
+  &::after {
+    display: block;
+    content: '';
+    width: 25px;
+    height: 2px;
+    background-color: $secondary-color;
+    margin: 22px auto;
+  }
 }
+
 .description__text {
+  font-size: 11px;
+  font-weight: 400;
+  color: $text-color-grey;
 }

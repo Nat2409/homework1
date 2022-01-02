@@ -2,11 +2,12 @@
   @extend %container;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .page-nav__button {
   width: 24px;
   height: 14px;
-  align-self: bottom;
+  // align-items: end;
 }
 .page-nav__line {
   padding: 0;

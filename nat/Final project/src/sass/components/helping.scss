@@ -20,8 +20,8 @@
   }
 }
 .helping__list {
-  @extend %container;
   @extend %list;
+  @extend %container;
   padding: 20px 23px 35px 29px;
   background-color: $text-color-white;
   box-shadow: 4px 6.928px 15.54px 5.46px rgba(29, 29, 27, 0.04);
