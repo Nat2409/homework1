@@ -2,7 +2,12 @@
   @extend %container;
   height: 639px;
   padding-top: 58px;
-  // background-image: url(./images/photo/offer-img-top.png);
+  // background-color: url(../images/background/bg-offer.png);
+  background-image: url(../images/background/offer-img-top.png),
+    url(../images/background/offer-img.png);
+  // background-image: url(../images/background/offer-img-top.png);
+  background-repeat: no-repeat;
+  background-position: center top 370px;
   // url(./images/photo/offer-img.png), url(./images/background/bg-offer.png);
 }
 .offer__title {
