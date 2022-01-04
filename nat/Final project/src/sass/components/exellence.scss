@@ -1,0 +1,43 @@
+.exellence {
+  height: 352px;
+  margin-bottom: 350px;
+  background-color: $text-color-dark;
+  background-image: url(../images/background/program-bg.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+.exellence__title {
+  @extend %title;
+  @extend %backdown;
+  width: 154px;
+  margin-left: 20px;
+  margin-top: -90px;
+  margin-bottom: 24px;
+  padding-top: 86px;
+  color: $text-color-white;
+  letter-spacing: 0.05em;
+  // background-color: transparent;
+}
+.exellence__list {
+  @extend %list;
+  @extend %container;
+  padding: 20px 23px 35px 29px;
+  background-color: $text-color-white;
+  box-shadow: 4px 6.928px 15.54px 5.46px rgba(29, 29, 27, 0.04);
+  margin: 0 auto;
+}
+.exellence__item {
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  color: $main-color;
+
+  &::before {
+    display: block;
+    content: '';
+    width: 25px;
+    height: 2px;
+    background-color: $secondary-color;
+    margin: 20px 10px 18px 0;
+  }
+}

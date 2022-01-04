@@ -241,8 +241,8 @@
           </li>
           <li class="program__item">
             <h3 class="program__heading">5 семестр</h3>
-            <h4 class="program__caption"></h4>
-            <p class="program__text">
+            <h4 class="program__caption program--border"></h4>
+            <p class="program__text program--border">
               Revision<br />
               Tests
             </p>
@@ -267,9 +267,16 @@
       <section class="teacher">
         <h2 class="teacher__title">Преподаватель</h2>
         <img
-          src="images/photos/"
-          alt="Елена Морева
-        "
+          class="teacher__img"
+          srcset="
+            ./images/photos/teacher.png    281w,
+            ./images/photos/teacher@2x.png 558w,
+            ./images/photos/teacher@3x.png 837w
+          "
+          src="./images/photos/teacher.png"
+          sizes="281px"
+          height="214"
+          alt="Елена Морева"
         />
         <h3 class="teacher__name">Елена Морева</h3>
         <ul class="teacher__list">

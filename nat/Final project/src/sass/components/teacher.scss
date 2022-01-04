@@ -1,0 +1,20 @@
+.teacher {
+  @extend %container;
+}
+.teacher__title {
+  @extend %title;
+  @extend %backdown;
+  margin-bottom: 30px;
+  color: $text-color-dark;
+  letter-spacing: 0.05em;
+}
+.teacher__img {
+  margin-bottom: 24px;
+}
+.teacher__name {
+  @extend %title;
+  @extend %backdown;
+  margin-bottom: 30px;
+  color: $text-color-dark;
+  letter-spacing: 0.05em;
+}
