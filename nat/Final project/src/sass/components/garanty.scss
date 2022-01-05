@@ -1,0 +1,20 @@
+.garanty {
+}
+.garanty__title {
+  @extend %title;
+  @extend %backdown;
+  margin-bottom: 30px;
+  color: $text-color-dark;
+  letter-spacing: 0.05em;
+  line-height: 63px;
+  text-align: center;
+}
+.garanty__list {
+  @extend %list;
+  @extend %backdown;
+  background-color: $bg-color-light-grey;
+}
+.garanty__item {
+}
+.garanty__item--color {
+}
