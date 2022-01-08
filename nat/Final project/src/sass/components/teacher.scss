@@ -23,15 +23,19 @@
 .teacher__list {
   @extend %list;
   @extend %backdown;
+  padding-left: 35px;
   font-size: 13px;
   font-weight: 600;
   letter-spacing: 0.05em;
   color: $text-color-dark;
 }
 .teacher__item {
-  // width: 238px;
+  position: relative;
+
+  width: 238px;
 
   &::before {
+    position: absolute;
     display: inline-block;
     content: '';
     width: 16px;
@@ -40,8 +44,8 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    fill: $secondary-color;
-    margin-right: 20px;
+    // fill: $secondary-color;
+    left: -35px;
   }
 
   &:not(:last-child) {
@@ -54,6 +58,7 @@
 .teacher__resume {
   @extend %list;
   @extend %backdown;
+  margin-left: 15px;
   font-size: 11px;
   font-weight: 600;
   letter-spacing: 0.05em;
