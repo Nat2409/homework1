@@ -1,32 +1,72 @@
 .review {
+  // padding-top: 50px;
+  padding-bottom: 56px;
 }
 .review__title {
+  @extend %title;
+  @extend %backdown;
   margin-bottom: 24px;
+  color: $text-color-dark;
+  letter-spacing: 0.05em;
+  text-align: center;
 }
-.reviev__block {
+.review__block {
   @extend %container;
   box-shadow: 4px 6.928px 15.54px 5.46px rgba(29, 29, 27, 0.04);
-  padding-bottom: 32px;
-  margin-bottom: 17px;
+  padding: 20px 28px 32px 28px;
+  margin-bottom: 16px;
 }
 .review__img {
   width: 80px;
   height: 80px;
   border-radius: 50%;
   overflow: hidden;
+  margin: 0 auto;
+  margin-bottom: 20px;
 }
 .review__social {
+  @extend %link;
+  margin: auto;
+  margin-bottom: 24px;
+  width: 25px;
+  height: 14px;
+  background-image: url(../images/svg/vk.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .review__name {
+  @extend %backdown;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  color: $secondary-color;
+  text-align: center;
+  margin-bottom: 10px;
 }
 .review__descrip {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  color: $text-color-grey;
+  text-align: center;
+  margin-bottom: 20px;
 }
 .review__text {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  line-height: 20px;
+  color: $main-color;
+  text-align: center;
 }
 .review__hidden {
   display: none;
 }
 .review__readmore {
+  line-height: 20px;
+  color: $secondary-color;
+  text-decoration: underline;
 }
 .review__pagin {
   @extend %list;
@@ -61,6 +101,7 @@
   background-size: cover;
 }
 .review__item {
+  cursor: pointer;
   // &:not(:last-child) {
   //   margin-right: 12px;
   // }
