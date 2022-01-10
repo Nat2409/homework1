@@ -10,37 +10,42 @@
 
   <body>
     <div class="wrapper">
-      <header class="page-header">
-        <nav class="page-nav">
-          <a href="#" class="logo">
-            <span class="logo__name">Hell</span>
-            <svg class="logo__svg">
-              <use href="./images/svg/sprite.svg#icon-fire"></use>
-            </svg>
-            <span class="logo__name">EN</span>
-            <span class="logo__descr logo__descr--color">адский</span>
-            <span class="logo__descr">английский</span>
-          </a>
-          <button class="button page-nav__button" type="menu">
-            <hr class="page-nav__line" />
-            <hr class="page-nav__line" />
-            <hr class="page-nav__line" />
+      <div class="wrap">
+        <header class="page-header">
+          <nav class="page-nav">
+            <a href="#" class="logo">
+              <span class="logo__name">Hell</span>
+              <svg class="logo__svg">
+                <use href="./images/svg/sprite.svg#icon-fire"></use>
+              </svg>
+              <span class="logo__name">EN</span>
+              <span class="logo__descr logo__descr--color">адский</span>
+              <span class="logo__descr">английский</span>
+            </a>
+            <button class="button button__subscribe page-nav__button">
+              консультация по телефону
+            </button>
+            <button class="button page-nav__menu" type="menu">
+              <hr class="page-nav__line" />
+              <hr class="page-nav__line" />
+              <hr class="page-nav__line" />
+            </button>
+          </nav>
+        </header>
+        <section class="offer">
+          <h2 class="offer__title">
+            Комплексная подготовка к ВНО по английскому языку
+          </h2>
+          <p class="offer__text">
+            <span class="offer__text--light">Просто не будет.</span><br />Но ты
+            гарантировано наберешь<br />
+            <span class="offer__text--color">+25 баллов</span>
+          </p>
+          <button class="button button__subscribe" type="button">
+            хочу на бесплатное занятие
           </button>
-        </nav>
-      </header>
-      <section class="offer">
-        <h2 class="offer__title">
-          Комплексная подготовка к ВНО по английскому языку
-        </h2>
-        <p class="offer__text">
-          <span class="offer__text--light">Просто не будет.</span><br />Но ты
-          гарантировано наберешь<br />
-          <span class="offer__text--color">+25 баллов</span>
-        </p>
-        <button class="button button__subscribe" type="button">
-          хочу на бесплатное занятие
-        </button>
-      </section>
+        </section>
+      </div>
       <section class="value">
         <ul class="value__list">
           <li class="value__item">
@@ -175,77 +180,109 @@
         <ul class="program__list">
           <li class="program__item">
             <h3 class="program__heading">1 семестр</h3>
-            <h4 class="program__caption">Grammar</h4>
-            <p class="program__text">
-              Nouns & Articles<br />
-              Adjectives & Adverb
-            </p>
-            <h4 class="program__caption">Vocabulary</h4>
-            <p class="program__text">
-              Family & Relations <br />
-              People & Society
-            </p>
+            <ul class="program__description">
+              <li class="program__details">
+                <h4 class="program__caption">Grammar</h4>
+                <p class="program__text">
+                  Nouns & Articles<br />
+                  Adjectives & Adverb
+                </p>
+              </li>
+              <li class="program__details">
+                <h4 class="program__caption">Vocabulary</h4>
+                <p class="program__text">
+                  Family & Relations <br />
+                  People & Society
+                </p>
+              </li>
+            </ul>
           </li>
           <li class="program__item">
             <h3 class="program__heading">2 семестр</h3>
-            <h4 class="program__caption">Grammar</h4>
-            <p class="program__text">
-              Pronouns<br />
-              Active Voice<br />
-              Passive Voice
-            </p>
-            <h4 class="program__caption">Vocabulary</h4>
-            <p class="program__text">
-              Home<br />
-              School<br />
-              Work
-            </p>
+            <ul class="program__description">
+              <li class="program__details">
+                <h4 class="program__caption">Grammar</h4>
+                <p class="program__text">
+                  Pronouns<br />
+                  Active Voice<br />
+                  Passive Voice
+                </p>
+              </li>
+              <li class="program__details">
+                <h4 class="program__caption">Vocabulary</h4>
+                <p class="program__text">
+                  Home<br />
+                  School<br />
+                  Work
+                </p>
+              </li>
+            </ul>
           </li>
           <li class="program__item">
             <h3 class="program__heading">3 семестр</h3>
-            <h4 class="program__caption">Grammar</h4>
-            <p class="program__text">
-              Modal verbs<br />
-              Infinitive<br />
-              Gerund<br />
-              Participle: 1, 2
-            </p>
-            <h4 class="program__caption">Vocabulary</h4>
-            <p class="program__text">
-              Travel & Tourism<br />
-              Culture & Free<br />
-              Time Sport
-            </p>
-            <h4 class="program__caption">Writing</h4>
-            <p class="program__text">Informal Letter</p>
+            <ul class="program__description">
+              <li class="program__details">
+                <h4 class="program__caption">Grammar</h4>
+                <p class="program__text">
+                  Modal verbs<br />
+                  Infinitive<br />
+                  Gerund<br />
+                  Participle: 1, 2
+                </p>
+              </li>
+              <li class="program__details">
+                <h4 class="program__caption">Vocabulary</h4>
+                <p class="program__text">
+                  Travel & Tourism<br />
+                  Culture & Free<br />
+                  Time Sport
+                </p>
+              </li>
+              <li class="program__details">
+                <h4 class="program__caption">Writing</h4>
+                <p class="program__text">Informal Letter</p>
+              </li>
+            </ul>
           </li>
           <li class="program__item">
             <h3 class="program__heading">4 семестр</h3>
-            <h4 class="program__caption">Grammar</h4>
-            <p class="program__text">
-              Clauses: Conditional<br />
-              and Wishes<br />
-              Direct / Reported speech<br />
-              Preposition<br />
-              Conjunction<br />
-              Numeral
-            </p>
-            <h4 class="program__caption">Vocabulary</h4>
-            <p class="program__text">
-              Healthy Living<br />
-              Nature & Environment<br />
-              Money
-            </p>
-            <h4 class="program__caption">Writing</h4>
-            <p class="program__text">Formal Letter</p>
+            <ul class="program__description">
+              <li class="program__details">
+                <h4 class="program__caption">Grammar</h4>
+                <p class="program__text">
+                  Clauses: Conditional<br />
+                  and Wishes<br />
+                  Direct / Reported speech<br />
+                  Preposition<br />
+                  Conjunction<br />
+                  Numeral
+                </p>
+              </li>
+              <li class="program__details">
+                <h4 class="program__caption">Vocabulary</h4>
+                <p class="program__text">
+                  Healthy Living<br />
+                  Nature & Environment<br />
+                  Money
+                </p>
+              </li>
+              <li class="program__details">
+                <h4 class="program__caption">Writing</h4>
+                <p class="program__text">Formal Letter</p>
+              </li>
+            </ul>
           </li>
           <li class="program__item">
             <h3 class="program__heading">5 семестр</h3>
-            <h4 class="program__caption program--border"></h4>
-            <p class="program__text program--border">
-              Revision<br />
-              Tests
-            </p>
+            <ul class="program__description program--border">
+              <li class="program__details">
+                <h4 class="program__caption"></h4>
+                <p class="program__text">
+                  Revision<br />
+                  Tests
+                </p>
+              </li>
+            </ul>
           </li>
         </ul>
       </section>

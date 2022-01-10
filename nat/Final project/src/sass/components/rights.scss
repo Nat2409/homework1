@@ -7,5 +7,21 @@
   font-weight: 500;
   line-height: 72px;
   color: $text-color-footer;
-  text-align: center;
+
+  @media (max-width: 767px) {
+    text-align: center;
+  }
+
+  @media (min-width: 768px) {
+    text-align: left;
+  }
+  @media (min-width: 768px), (max-width: 1279px) {
+    padding-left: 40px;
+  }
+  @media (min-width: 1280px), (max-width: 1679px) {
+    padding-left: 35px;
+  }
+  @media (min-width: 1680px) {
+    padding-left: 180px;
+  }
 }

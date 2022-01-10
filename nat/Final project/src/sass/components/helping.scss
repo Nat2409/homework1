@@ -27,19 +27,29 @@
   box-shadow: 4px 6.928px 15.54px 5.46px rgba(29, 29, 27, 0.04);
   margin: 0 auto;
   margin-top: -310px;
+  counter-reset: v;
 }
 .helping__item {
   font-size: 13px;
   font-weight: bold;
   letter-spacing: 0.05em;
   color: $main-color;
+  counter-increment: v;
 
   &::before {
     display: block;
-    content: '';
-    width: 25px;
-    height: 2px;
-    background-color: $secondary-color;
-    margin: 20px 10px 18px 0;
+    width: 54px;
+    height: 30px;
+    background-image: url(../images/pseudo/rectangle.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    margin: 6px 0 4px 0;
+    content: counter(v, decimal-leading-zero);
+    color: $secondary-color;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    text-align: end;
   }
 }

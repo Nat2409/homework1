@@ -1,5 +1,12 @@
 .wrapper {
-  width: 320px;
   margin: 0 auto;
-  padding-top: 25px;
+  @media (max-width: 767px) {
+    width: 320px;
+    padding-top: 25px;
+  }
+
+  @media (min-width: 768px) {
+    width: 768px;
+    padding-top: 35px;
+  }
 }
