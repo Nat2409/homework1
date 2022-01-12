@@ -1,5 +1,7 @@
 .value {
-  @extend %container;
+  width: 280px;
+  margin: 0 auto;
+  padding-top: 30px;
 }
 .value__list {
   @extend %list;
