@@ -8,13 +8,39 @@
 }
 .button__subscribe {
   margin: 0 auto;
-  width: 250px;
-  height: 48px;
+  // width: 250px;
+  // height: 48px;
   background-color: $secondary-color;
   color: $text-color-white;
   text-transform: uppercase;
-  font-size: 11px;
   letter-spacing: 0.13em;
   font-weight: 700;
   font-family: Tahoma, sans-serif;
+
+  // @media (max-width: 767px) {
+  //   width: 250px;
+  //   height: 48px;
+  // }
+  // @media (min-width: 768px) and (max-width: 1279px) {
+  //   width: 300px;
+  //   height: 68px;
+  // }
+  @media (max-width: 1279px) {
+    font-size: 11px;
+    width: 250px;
+    height: 48px;
+  }
+  @media (min-width: 1280px) {
+    letter-spacing: 0.2em;
+  }
+  @media (min-width: 1280px) and (max-width: 1679px) {
+    font-size: 12px;
+    width: 300px;
+    height: 68px;
+  }
+  @media (min-width: 1680px) {
+    font-size: 14px;
+    width: 350px;
+    height: 68px;
+  }
 }
