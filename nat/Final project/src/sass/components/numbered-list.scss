@@ -1,0 +1,95 @@
+.numbered-list {
+  @extend %list;
+  margin: 0 auto;
+  background-color: $text-color-white;
+  box-shadow: 4px 6.928px 15.54px 5.46px rgba(29, 29, 27, 0.04);
+  counter-reset: v;
+
+  @media (max-width: 767px) {
+    padding: 0 23px 35px 29px;
+    width: 280px;
+  }
+  @media (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media (min-width: 768px) and (max-width: 1279px) {
+    width: 688px;
+    padding: 0 24px 35px 108px;
+    // margin-left: 40px;
+    // margin-top: -140px;
+  }
+  @media (min-width: 1280px) and (max-width: 1679px) {
+    width: 1210px;
+    // margin-left: 35px;
+    // margin-top: -245px;
+    padding: 0 24px 50px 100px;
+  }
+  @media (min-width: 1680px) {
+    width: 1345px;
+    // margin-left: 188px;
+    // margin-top: -205px;
+    padding: 10px 0 70px 102px;
+  }
+}
+.numbered-list__item {
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  color: $main-color;
+  counter-increment: v;
+
+  @media (max-width: 1279px) {
+    font-size: 13px;
+  }
+  @media (min-width: 768px) and (max-width: 1279px) {
+    width: 202px;
+    padding-top: 30px;
+
+    &:not(:nth-of-type(2n)) {
+      margin-right: 72px;
+    }
+  }
+  @media (min-width: 1280px) and (max-width: 1679px) {
+    width: 255px;
+    font-size: 18px;
+    padding-top: 46px;
+
+    &:not(:nth-of-type(3n)) {
+      margin-right: 110px;
+    }
+  }
+  @media (min-width: 1680px) {
+    width: 300px;
+    font-size: 21px;
+    padding-top: 50px;
+
+    &:not(:nth-of-type(3n)) {
+      margin-right: 126px;
+    }
+  }
+
+  &::before {
+    display: block;
+    width: 54px;
+    height: 30px;
+    background-image: url(../images/pseudo/rectangle.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    margin: 6px 0 4px 0;
+    content: counter(v, decimal-leading-zero);
+    color: $secondary-color;
+
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    text-align: end;
+
+    @media (max-width: 1279px) {
+      font-size: 14px;
+    }
+
+    @media (min-width: 1280px) {
+      font-size: 21px;
+    }
+  }
+}

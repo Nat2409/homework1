@@ -2,20 +2,25 @@
   background-color: $text-color-dark;
   color: $text-color-white;
 
-  // padding-bottom: 20px;
+  // // padding-bottom: 20px;
 
-  @media (max-width: 767px) {
-    // padding-top: 56px;
-  }
+  // @media (max-width: 767px) {
+  //   // padding-top: 56px;
+  // }
   @media (min-width: 768px) and (max-width: 1279px) {
     // padding-top: 72px;
+    background-image: url(../images/background/program-bg-tab.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    padding-bottom: 100px;
   }
-  @media (min-width: 1280px) and (max-width: 1679px) {
-    // padding-top: 84px;
-  }
-  @media (min-width: 1680px) {
-    // padding-top: 138px;
-  }
+  // @media (min-width: 1280px) and (max-width: 1679px) {
+  //   // padding-top: 84px;
+  // }
+  // @media (min-width: 1680px) {
+  //   // height: 1219px;
+  //   // padding-top: 138px;
+  // }
 }
 .program__title {
   @extend %backdown;
@@ -164,9 +169,6 @@
 }
 .program__caption {
   @extend %backdown;
-
-  // padding-top: 26px;
-  font-size: 13px;
   font-weight: 700;
   letter-spacing: 0.05em;
   color: $secondary-color;
@@ -195,10 +197,7 @@
 }
 .program__text {
   @extend %backdown;
-
   padding-left: 30px;
-  // border-left: 2px solid $text-color-grey;
-  // padding-bottom: 22px;
   font-weight: 400;
   letter-spacing: 0.05em;
   color: $text-color-grey;

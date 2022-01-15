@@ -1,53 +1,112 @@
 .exellence {
-  height: 352px;
-  margin-bottom: 350px;
   background-color: $text-color-dark;
-  background-image: url(../images/background/program-bg.png);
   background-repeat: no-repeat;
-  background-position: top right;
+  @media (max-width: 767px) {
+    height: 352px;
+    background-image: url(../images/background/program-bg.png);
+    background-position: top right;
+    margin-bottom: 350px;
+  }
+
+  @media (min-width: 768px) and (max-width: 1279px) {
+    // background-image: url(../images/background/program-bg-tab.png);
+    // background-position: top right;
+    height: 266px;
+    margin-bottom: 280px;
+  }
+
+  @media (min-width: 1280px) and (max-width: 1679px) {
+    background-image: url(../images/background/program-bg-1280.png);
+    background-position: top left;
+    height: 731px;
+    margin-bottom: 105px;
+  }
+  @media (min-width: 1680px) {
+    background-image: url(../images/background/program-bg-1680.png);
+    background-position: top left;
+    height: 588px;
+    margin-bottom: 326px;
+  }
 }
 .exellence__title {
-  @extend %title;
   @extend %backdown;
-  width: 154px;
-  margin-left: 20px;
-  margin-top: -90px;
-  margin-bottom: 16px;
-  padding-top: 86px;
+  font-weight: 800;
   color: $text-color-white;
   letter-spacing: 0.05em;
   // background-color: transparent;
-}
-.exellence__list {
-  @extend %list;
-  @extend %container;
-  padding: 20px 23px 35px 29px;
-  background-color: $text-color-white;
-  box-shadow: 4px 6.928px 15.54px 5.46px rgba(29, 29, 27, 0.04);
-  margin: 0 auto;
-  counter-reset: v;
-}
-.exellence__item {
-  font-size: 13px;
-  font-weight: bold;
-  letter-spacing: 0.05em;
-  color: $main-color;
-  counter-increment: v;
+  @media (max-width: 767px) {
+    font-size: 20px;
+    width: 154px;
+    margin-left: 20px;
+    margin-top: -90px;
+    margin-bottom: 16px;
+    padding-top: 86px;
+  }
+  @media (min-width: 768px) {
+    text-align: center;
+  }
+  @media (min-width: 768px) and (max-width: 1279px) {
+    font-size: 26px;
+    margin-bottom: 20px;
+    margin-top: -1px;
+    padding-top: 40px;
+  }
 
-  &::before {
-    display: block;
-    width: 54px;
-    height: 30px;
-    background-image: url(../images/pseudo/rectangle.png);
-    background-repeat: no-repeat;
-    background-position: left center;
-    margin: 6px 0 4px 0;
-    content: counter(v, decimal-leading-zero);
-    color: $secondary-color;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 30px;
-    letter-spacing: 0.05em;
-    text-align: end;
+  @media (min-width: 1280px) and (max-width: 1679px) {
+    font-size: 42px;
+    margin-bottom: 38px;
+    margin-top: -185px;
+    padding-top: 220px;
+  }
+  @media (min-width: 1680px) {
+    font-size: 46px;
+    margin-bottom: 46px;
+    margin-top: -185px;
+    padding-top: 230px;
   }
 }
+.exellence__numbered-list {
+  //   @extend %list;
+  //   background-color: $text-color-white;
+  //   box-shadow: 4px 6.928px 15.54px 5.46px rgba(29, 29, 27, 0.04);
+  // margin: 0 auto;
+  //   counter-reset: v;
+
+  //   @media (max-width: 767px) {
+  //     width: 280px;
+  //     padding: 20px 23px 35px 29px;
+  //   }
+
+  @media (min-width: 768px) and (max-width: 1279px) {
+    // margin-top: -140px;
+  }
+
+  @media (min-width: 1280px) and (max-width: 1679px) {
+  }
+  @media (min-width: 1680px) {
+  }
+}
+// .exellence__item {
+//   font-size: 13px;
+//   font-weight: bold;
+//   letter-spacing: 0.05em;
+//   color: $main-color;
+//   counter-increment: v;
+
+//   &::before {
+//     display: block;
+//     width: 54px;
+//     height: 30px;
+//     background-image: url(../images/pseudo/rectangle.png);
+//     background-repeat: no-repeat;
+//     background-position: left center;
+//     margin: 6px 0 4px 0;
+//     content: counter(v, decimal-leading-zero);
+//     color: $secondary-color;
+//     font-size: 14px;
+//     font-weight: 700;
+//     line-height: 30px;
+//     letter-spacing: 0.05em;
+//     text-align: end;
+//   }
+// }
