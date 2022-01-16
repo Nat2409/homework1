@@ -1,30 +1,125 @@
 .teacher {
-  @extend %container;
+  @media (max-width: 767px) {
+    width: 280px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 768px) and (max-width: 1279px) {
+    width: 768px;
+    margin-left: 40px;
+  }
+
+  @media (min-width: 1280px) and (max-width: 1679px) {
+    width: 1280px;
+    margin-left: 35px;
+  }
+  @media (min-width: 1680px) {
+    width: 1680px;
+    margin-left: 188px;
+  }
 }
 .teacher__title {
-  @extend %title;
   @extend %backdown;
-  margin-bottom: 30px;
+  font-weight: 800;
   color: $text-color-dark;
   letter-spacing: 0.05em;
+
+  @media (max-width: 767px) {
+    margin-bottom: 30px;
+    font-size: 20px;
+    text-align: center;
+  }
+  @media (min-width: 768px) and (max-width: 1279px) {
+    margin-bottom: 38px;
+    font-size: 26px;
+  }
+  @media (min-width: 1280px) and (max-width: 1679px) {
+    margin-bottom: 62px;
+    font-size: 42px;
+  }
+  @media (min-width: 1680px) {
+    margin-bottom: 82px;
+    font-size: 46px;
+  }
+}
+.teacher__block {
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+  }
+  @media (min-width: 768px) and (max-width: 1279px) {
+    width: 688px;
+    margin-bottom: 64px;
+  }
+  @media (min-width: 1280px) and (max-width: 1679px) {
+    width: 1210px;
+    margin-bottom: 100px;
+  }
+  @media (min-width: 1680px) {
+    width: 1256px;
+    margin-bottom: 148px;
+  }
 }
 .teacher__img {
-  margin-bottom: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  @media (max-width: 767px) {
+    width: 279px;
+    height: 214px;
+    margin-bottom: 24px;
+    background-image: url(../images/photos/teacher.png);
+  }
+
+  @media (min-width: 768px) and (max-width: 1279px) {
+    width: 247px;
+    height: 321px;
+    margin-top: 6px;
+    background-image: url(../images/photos/teacher@2x.png);
+  }
+
+  @media (min-width: 1280px) {
+    width: 494px;
+    height: 644px;
+    margin-top: 6px;
+    background-image: url(../images/photos/teacher@3x.png);
+  }
+  @media (min-width: 1680px) {
+  }
+}
+.teacher__description {
+  @media (min-width: 768px) and (max-width: 1279px) {
+    width: 400px;
+  }
+  @media (min-width: 1280px) and (max-width: 1679px) {
+    width: 634px;
+  }
+  @media (min-width: 1680px) {
+    width: 674px;
+  }
 }
 .teacher__name {
-  @extend %title;
   @extend %backdown;
-  margin-bottom: 25px;
+  font-weight: 700;
+  margin-bottom: 20px;
   color: $text-color-dark;
   letter-spacing: 0.05em;
   padding-bottom: 5px;
   border-bottom: 1px solid rgba(133, 133, 133, 0.38);
+
+  @media (max-width: 767px) {
+    font-size: 16px;
+  }
+  @media (min-width: 768px) and (max-width: 1279px) {
+    font-size: 20px;
+  }
+  @media (min-width: 1280px) {
+    font-size: 29px;
+  }
 }
 .teacher__list {
   @extend %list;
   @extend %backdown;
   padding-left: 35px;
-  font-size: 13px;
   font-weight: 600;
   letter-spacing: 0.05em;
   color: $text-color-dark;
@@ -32,14 +127,10 @@
 .teacher__item {
   position: relative;
 
-  width: 238px;
-
   &::before {
     position: absolute;
     display: inline-block;
     content: '';
-    width: 16px;
-    height: 12px;
     background-image: url(../images/svg/check.svg);
     background-repeat: no-repeat;
     background-position: center;
@@ -49,17 +140,36 @@
   }
 
   &:not(:last-child) {
-    margin-bottom: 26px;
+    margin-bottom: 18px;
   }
   &:last-child {
-    margin-bottom: 44px;
+    margin-bottom: 20px;
+  }
+  @media (max-width: 767px) {
+    width: 238px;
+  }
+  @media (min-width: 768px) {
+    width: 100%;
+  }
+  @media (max-width: 1279px) {
+    font-size: 13px;
+    &::before {
+      width: 16px;
+      height: 12px;
+    }
+  }
+  @media (min-width: 1280px) {
+    font-size: 17px;
+    &::before {
+      width: 20px;
+      height: 16px;
+    }
   }
 }
 .teacher__resume {
   @extend %list;
   @extend %backdown;
-  margin-left: 15px;
-  font-size: 11px;
+  // margin-left: 15px;
   font-weight: 600;
   letter-spacing: 0.05em;
   color: $text-color-grey;
@@ -71,24 +181,44 @@
     height: 2px;
     background-color: $secondary-color;
     // margin: 20px 10px 18px 0;
-    margin-bottom: 22px;
+    margin-bottom: 20px;
+  }
+  @media (max-width: 767px) {
+    margin-left: 15px;
   }
 }
 .teacher__text {
   &:not(:last-child) {
-    margin-bottom: 28px;
+    margin-bottom: 22px;
   }
   &:last-child {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
+  }
+  @media (max-width: 1279px) {
+    font-size: 11px;
+  }
+  @media (min-width: 1280px) {
+    font-size: 17px;
   }
 }
 .teacher__link {
   @extend %link;
   color: $secondary-color;
   text-decoration: underline;
-  font-size: 11px;
   font-weight: 400;
   letter-spacing: 0.05em;
-  text-align: center;
-  margin-bottom: 38px;
+
+  @media (max-width: 767px) {
+    text-align: center;
+    margin-bottom: 38px;
+  }
+  // @media (min-width: 768px) {
+  //   margin-left: 15px;
+  // }
+  @media (max-width: 1279px) {
+    font-size: 11px;
+  }
+  @media (min-width: 1280px) {
+    font-size: 17px;
+  }
 }
