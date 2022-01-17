@@ -1,6 +1,6 @@
 .review {
   // padding-top: 50px;
-  padding-bottom: 56px;
+  // padding-bottom: 56px;
 }
 .review__title {
   @extend %backdown;
@@ -223,7 +223,7 @@
 
   @media (max-width: 767px) {
     width: 266px;
-    margin-bottom: 55px;
+    margin-bottom: 56px;
   }
   @media (min-width: 768px) {
     width: 638px;

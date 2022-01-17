@@ -1,30 +1,97 @@
 .registration {
-  height: 537px;
-  padding: 50px 20px;
-  background-image: url(../images/background/subscribe__mobile.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (max-width: 767px) {
+    height: 537px;
+    padding: 44px 20px;
+    background-image: url(../images/background/subscribe__mobile.png);
+  }
+  @media (min-width: 768px) and (max-width: 1279px) {
+    background-image: url(../images/background/subscribe__tablet.png);
+
+    height: 532px;
+    padding: 56px 100px;
+  }
+  @media (min-width: 1280px) and (max-width: 1679px) {
+    background-image: url(../images/background/subscribe__desctop.png);
+
+    height: 750px;
+    padding: 80px 150px;
+  }
+  @media (min-width: 1680px) {
+    background-image: url(../images/background/subscribe__1680.png);
+
+    height: 844px;
+    padding: 126px 340px 80px 340px;
+  }
 }
 .registration__title {
   @extend %backdown;
-  margin-bottom: 22px;
-  font-size: 14px;
   font-weight: 800;
-  line-height: 26px;
+
   color: $text-color-white;
   letter-spacing: 0.05em;
   text-align: center;
+  @media (max-width: 767px) {
+    font-size: 14px;
+    margin-bottom: 16px;
+    line-height: 26px;
+  }
+  @media (min-width: 768px) and (max-width: 1279px) {
+    font-size: 22px;
+    line-height: 38px;
+    margin-bottom: 28px;
+    // width: 550px;
+  }
+  @media (min-width: 1280px) {
+    font-size: 38px;
+    line-height: 50px;
+  }
+  @media (min-width: 1280px) and (max-width: 1679px) {
+    margin-bottom: 42px;
+  }
+  @media (min-width: 1680px) {
+    margin-bottom: 66px;
+  }
 }
 .registration--color {
   color: $secondary-color;
 }
 .registration__text {
-  font-size: 11px;
   font-weight: 600;
   letter-spacing: 0.05em;
-  line-height: 20px;
   color: $text-color-white;
-  text-align: center;
-  margin-bottom: 25px;
+
+  @media (max-width: 767px) {
+    font-size: 11px;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  @media (max-width: 1279px) {
+    line-height: 20px;
+  }
+  @media (min-width: 768px) {
+    margin: 0 auto;
+  }
+  @media (min-width: 768px) and (max-width: 1279px) {
+    width: 464px;
+    font-size: 15px;
+    margin: 0 auto;
+    margin-bottom: 38px;
+  }
+  @media (min-width: 1280px) {
+    text-align: center;
+    margin-bottom: 52px;
+  }
+  @media (min-width: 1280px) and (max-width: 1679px) {
+    font-size: 18px;
+    line-height: 25px;
+    width: 554px;
+  }
+  @media (min-width: 1680px) {
+    font-size: 25px;
+    width: 776px;
+  }
 }
