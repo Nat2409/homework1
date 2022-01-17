@@ -1,4 +1,8 @@
 .contacts {
+  @media (max-width: 767px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   @media (max-width: 1279px) {
     padding-top: 35px;
   }
@@ -8,11 +12,13 @@
   @media (min-width: 1280px) {
     padding-top: 45px;
   }
-  @media (min-width: 768px), (max-width: 1279px) {
+  @media (min-width: 768px) and (max-width: 1279px) {
     padding-left: 40px;
+    padding-right: 40px;
   }
-  @media (min-width: 1280px), (max-width: 1679px) {
+  @media (min-width: 1280px) and (max-width: 1679px) {
     padding-left: 35px;
+    padding-right: 35px;
   }
   @media (min-width: 1680px) {
     padding-left: 180px;
@@ -20,19 +26,15 @@
 }
 .contacts__phone {
   @extend %backdown;
-  font-size: 18px;
   line-height: 38px;
   font-weight: 600;
   letter-spacing: 0.05em;
   color: $text-color-dark;
   text-align: center;
-  margin-bottom: 18px;
 
   &::before {
     display: inline-block;
     content: '';
-    width: 20px;
-    height: 20px;
     background-image: url(../images/svg/tel.svg);
     background-repeat: no-repeat;
     background-position: center;
@@ -53,6 +55,26 @@
       vertical-align: middle;
     }
   }
+  @media (max-width: 767px) {
+    font-size: 18px;
+    margin-bottom: 18px;
+  }
+  @media (min-width: 768px) and (max-width: 1279px) {
+    font-size: 20px;
+  }
+  @media (min-width: 1280px) {
+    &::before {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  @media (min-width: 1280px) {
+    font-size: 27px;
+    &::before {
+      width: 32px;
+      height: 32px;
+    }
+  }
 }
 .contacts__social {
   @extend %link;
@@ -71,15 +93,17 @@
   }
 }
 .contacts__logo {
-  margin: 0 auto;
+  @media (max-width: 767px) {
+    margin: 0 auto;
+  }
   @media (min-width: 768px) {
     order: 1;
   }
-  @media (min-width: 768px), (max-width: 1279px) {
-    margin-left: 76px;
+  @media (min-width: 768px) and (max-width: 1279px) {
+    // margin-left: 76px;
     margin-right: 82px;
   }
-  @media (min-width: 1280px), (max-width: 1679px) {
+  @media (min-width: 1280px) and (max-width: 1679px) {
     margin-right: 252px;
   }
   @media (min-width: 1680px) {

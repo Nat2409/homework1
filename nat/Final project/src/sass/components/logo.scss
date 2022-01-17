@@ -1,34 +1,58 @@
 .logo {
   @extend %link;
-  width: 85px;
-  height: 34px;
+
   @media (min-width: 768px) {
     margin-right: auto;
+  }
+  @media (max-width: 767px) {
+    width: 85px;
+    height: 34px;
+  }
+  @media (min-width: 768px) {
+    width: 132px;
+    height: 40px;
   }
 }
 .logo__name {
   font-weight: 800;
-  font-size: 15px;
   letter-spacing: 0.05em;
   color: $logo-color;
+  @media (max-width: 767px) {
+    font-size: 15px;
+  }
+  @media (min-width: 768px) {
+    font-size: 25px;
+  }
 }
 .logo__descr {
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 6px;
-  letter-spacing: 0.13em;
   text-align: center;
   vertical-align: top;
   color: $logo-color;
   text-align: justify;
+  @media (max-width: 767px) {
+    font-size: 6px;
+    letter-spacing: 0.13em;
+  }
+  @media (min-width: 768px) {
+    font-size: 8.75px;
+    letter-spacing: 0.2em;
+  }
 }
 .logo__descr--color {
   color: $secondary-color;
 }
 .logo__svg {
   display: inline-block;
-  width: 15px;
-  height: 22px;
   fill: $secondary-color;
   vertical-align: middle;
+  @media (max-width: 767px) {
+    width: 15px;
+    height: 22px;
+  }
+  @media (min-width: 768px) {
+    width: 21px;
+    height: 30px;
+  }
 }
