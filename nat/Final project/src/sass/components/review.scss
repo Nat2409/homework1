@@ -3,65 +3,210 @@
   padding-bottom: 56px;
 }
 .review__title {
-  @extend %title;
   @extend %backdown;
-  margin-bottom: 24px;
+  font-weight: 800;
   color: $text-color-dark;
   letter-spacing: 0.05em;
   text-align: center;
+  @media (max-width: 767px) {
+    font-size: 20px;
+    margin-bottom: 24px;
+  }
+  @media (min-width: 768px) {
+    margin-bottom: 44px;
+  }
+  @media (min-width: 768px) and (max-width: 1279px) {
+    font-size: 26px;
+  }
+  @media (min-width: 1280px) and (max-width: 1679px) {
+    font-size: 42px;
+  }
+  @media (min-width: 1680px) {
+    // margin-bottom: 82px;
+    font-size: 46px;
+  }
 }
 .review__block {
-  @extend %container;
+  margin: 0 auto;
   box-shadow: 4px 6.928px 15.54px 5.46px rgba(29, 29, 27, 0.04);
-  padding: 20px 28px 32px 28px;
-  margin-bottom: 16px;
+
+  @media (max-width: 767px) {
+    width: 280px;
+    padding: 20px 28px 32px 28px;
+    margin-bottom: 16px;
+  }
+  @media (min-width: 768px) {
+    display: flex;
+    position: relative;
+    &::before {
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      display: block;
+      // margin-right: 28px;
+      cursor: pointer;
+      content: '';
+      width: 25px;
+      height: 14px;
+      background-image: url(../images/pseudo/arrow-before_tab.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+    &::after {
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      display: block;
+      // margin-left: 28px;
+      cursor: pointer;
+      content: '';
+      width: 25px;
+      height: 14px;
+      background-image: url(../images/pseudo/arrow-after_tab.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 1279px) {
+    width: 688px;
+    padding: 48px 48px 50px 35px;
+    margin-bottom: 23px;
+  }
+  @media (max-width: 1279px) {
+    &::before {
+      left: -8px;
+    }
+    &::after {
+      right: -32px;
+    }
+  }
+  @media (min-width: 1280px) {
+    width: 1066px;
+    padding: 48px 92px 50px 88px;
+    &::before {
+      left: -32px;
+    }
+    &::after {
+      right: -57px;
+    }
+  }
+  @media (min-width: 1280px) and (max-width: 1679px) {
+    margin-bottom: 35px;
+  }
+  @media (min-width: 1680px) {
+    margin-bottom: 42px;
+  }
 }
 .review__img {
-  width: 80px;
-  height: 80px;
   border-radius: 50%;
   overflow: hidden;
   margin: 0 auto;
-  margin-bottom: 20px;
+
+  @media (max-width: 1279px) {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 22px;
+  }
+  @media (min-width: 1280px) {
+    width: 145px;
+    height: 145px;
+    margin-bottom: 25px;
+  }
 }
 .review__social {
   @extend %link;
   margin: auto;
-  margin-bottom: 24px;
   width: 25px;
   height: 14px;
   background-image: url(../images/svg/vk.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  @media (max-width: 767px) {
+    margin-bottom: 24px;
+  }
+}
+.review__left {
+  @media (min-width: 768px) and (max-width: 1279px) {
+    margin-right: 44px;
+  }
+  @media (min-width: 1280px) {
+    margin-right: 32px;
+  }
+}
+.review_right {
+  @media (min-width: 768px) and (max-width: 1279px) {
+    width: 466px;
+  }
+  @media (min-width: 1280px) {
+    width: 706px;
+  }
 }
 .review__name {
   @extend %backdown;
-  font-size: 13px;
+
   font-weight: 800;
   letter-spacing: 0.05em;
   color: $secondary-color;
-  text-align: center;
-  margin-bottom: 10px;
+
+  @media (max-width: 767px) {
+    text-align: center;
+  }
+  @media (max-width: 767px) {
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+  @media (min-width: 768px) and (max-width: 1279px) {
+    font-size: 18px;
+    margin-bottom: 28px;
+  }
+  @media (min-width: 1280px) {
+    font-size: 25px;
+    margin-bottom: 22px;
+  }
 }
 .review__descrip {
-  font-size: 11px;
   font-weight: 500;
   letter-spacing: 0.05em;
   color: $text-color-grey;
-  text-align: center;
-  margin-bottom: 20px;
+  @media (max-width: 767px) {
+    text-align: center;
+  }
+  @media (max-width: 767px) {
+    font-size: 11px;
+    margin-bottom: 20px;
+  }
+  @media (min-width: 768px) {
+    font-size: 13px;
+    margin-bottom: 27px;
+  }
 }
 .review__text {
-  font-size: 11px;
   font-weight: 500;
   letter-spacing: 0.05em;
   line-height: 20px;
   color: $main-color;
-  text-align: center;
+
+  @media (max-width: 767px) {
+    text-align: center;
+  }
+  @media (max-width: 1279px) {
+    font-size: 11px;
+    line-height: 20px;
+  }
+
+  @media (min-width: 1280px) {
+    font-size: 17px;
+    line-height: 30px;
+  }
 }
 .review__hidden {
-  display: none;
+  @media (max-width: 767px) {
+    display: none;
+  }
 }
 .review__readmore {
   line-height: 20px;
@@ -72,49 +217,127 @@
   @extend %list;
   @extend %backdown;
   display: flex;
-  width: 266px;
+
   margin: 0 auto;
   align-items: center;
+
+  @media (max-width: 767px) {
+    width: 266px;
+    margin-bottom: 55px;
+  }
+  @media (min-width: 768px) {
+    width: 638px;
+  }
+
+  @media (min-width: 768px) and (max-width: 1279px) {
+    margin-bottom: 75px;
+  }
+  @media (min-width: 1280px) and (max-width: 1679px) {
+    margin-bottom: 100px;
+  }
+  @media (min-width: 1680px) {
+    margin-bottom: 125px;
+  }
 }
 .review__pagin--pseudo::before {
-  display: inline-block;
-  margin-right: 28px;
-  cursor: pointer;
-  content: '';
-  width: 20px;
-  height: 11px;
-  background-image: url(../images/pseudo/arrow-before.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  @media (max-width: 767px) {
+    display: inline-block;
+    margin-right: 28px;
+    cursor: pointer;
+    content: '';
+    width: 20px;
+    height: 11px;
+    background-image: url(../images/pseudo/arrow-before.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
 }
 .review__pagin--pseudo::after {
-  display: inline-block;
-  margin-left: 28px;
-  cursor: pointer;
-  content: '';
-  width: 20px;
-  height: 11px;
-  background-image: url(../images/pseudo/arrow-after.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  @media (max-width: 767px) {
+    display: inline-block;
+    margin-left: 28px;
+    cursor: pointer;
+    content: '';
+    width: 20px;
+    height: 11px;
+    background-image: url(../images/pseudo/arrow-after.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
 }
 .review__item {
   cursor: pointer;
-  // &:not(:last-child) {
-  //   margin-right: 12px;
+  margin: auto;
+  border-radius: 50%;
+  border: 2px solid transparent;
+
+  &:hover,
+  &:focus {
+    border: 2px solid $secondary-color;
+  }
+
+  // @media (max-width: 1279px) {
+  //   width: 45px;
+  //   height: 45px;
   // }
-  &:not(:nth-child(3)) {
-    margin-right: 12px;
+  // @media (min-width: 1280px) {
+  //   width: 57px;
+  //   height: 57px;
+  // }
+  // &:hover,
+  // &:focus {
+  //   border: 2px solid $secondary-color;
+  // }
+
+  @media (max-width: 767px) {
+    &:not(:nth-child(3)) {
+      margin-right: 12px;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 1279px) {
+    &:not(:last-child) {
+      margin-right: 21px;
+    }
+  }
+  @media (min-width: 1280px) {
+    &:not(:last-child) {
+      margin-right: 35px;
+    }
   }
 }
 .review__img--smaller {
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
+  // width: 45px;
+  // height: 45px;
+  // border-radius: 50%;
   overflow: hidden;
+  border-radius: 50%;
+  // border: 2px solid transparent;
+  // border: hidden;
+
+  // &:hover,
+  // &:focus {
+  //   border: 2px solid $secondary-color;
+  // }
+
+  @media (max-width: 1279px) {
+    width: 45px;
+    height: 45px;
+  }
+  @media (min-width: 1280px) {
+    width: 57px;
+    height: 57px;
+  }
 }
+//   &:hover,
+//   &:focus {
+//     border: 2px solid $secondary-color;
+//   }
+//   @media (min-width: 1280px) {
+// }
 .review__item--hidden {
-  display: none;
+  @media (max-width: 767px) {
+    display: none;
+  }
 }
