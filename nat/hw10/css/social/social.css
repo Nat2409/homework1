@@ -1,0 +1,73 @@
+.social {
+  position: absolute;
+  top: 0;
+  width: 380px;
+  height: 470px;
+  -webkit-transition: -webkit-transform 0.2s linear;
+  transition: -webkit-transform 0.2s linear;
+  -o-transition: transform 0.2s linear;
+  transition: transform 0.2s linear;
+  transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(rgba(252, 227, 138, 0)),
+    to(rgba(243, 129, 129, 0))
+  );
+  background: -o-linear-gradient(
+    left,
+    rgba(252, 227, 138, 0) 0%,
+    rgba(243, 129, 129, 0) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(252, 227, 138, 0) 0%,
+    rgba(243, 129, 129, 0) 100%
+  );
+}
+.social__list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 227px;
+  height: 56px;
+  margin: 0 auto;
+}
+.social__link {
+  padding-top: 15px;
+  width: 56px;
+  height: 56px;
+  background-color: #fce38a;
+  opacity: 0;
+  -webkit-transition: background-color 0.2s linear;
+  -o-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
+}
+.social__img {
+  display: block;
+  width: 26px;
+  height: 26px;
+  margin: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  fill: #f38181;
+  -webkit-transition: fill 0.2s linear;
+  -o-transition: fill 0.2s linear;
+  transition: fill 0.2s linear;
+}
+.social__link:hover,
+.social__link:focus {
+  cursor: pointer;
+  background-color: #f38181;
+}
+.social__link:hover .social__img {
+  fill: #ffffff;
+}
+.social__link:focus .social__img {
+  fill: #ffffff;
+}

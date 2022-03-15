@@ -1,0 +1,6 @@
+html {
+  box-sizing: border-box;
+}
+.gallery-style {
+  display: flex;
+}

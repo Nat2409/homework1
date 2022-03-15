@@ -1,0 +1,85 @@
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.wrapper {
+  max-width: 1920px;
+  height: 1000px;
+  margin: 0 auto;
+  background-image: -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      from(rgba(252, 227, 138, 0.9)),
+      to(rgba(243, 129, 129, 0.9))
+    ),
+    url(../img/Background.png);
+  background-image: -o-linear-gradient(
+      bottom,
+      rgba(252, 227, 138, 0.9) 0%,
+      rgba(243, 129, 129, 0.9) 100%
+    ),
+    url(../img/Background.png);
+  background-image: linear-gradient(
+      to top,
+      rgba(252, 227, 138, 0.9) 0%,
+      rgba(243, 129, 129, 0.9) 100%
+    ),
+    url(../img/Background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.link {
+  display: block;
+  text-decoration: none;
+}
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.paragraf {
+  margin: 0;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Montserrat', sans-serif;
+  padding-top: 28px;
+}
+/* .alarm {
+  background-image: url(../img/ALARM.png);
+}
+.line-graph {
+  background-image: url(../img/LINE-GRAPH.png);
+}
+.computer {
+  background-image: url(../img/COMPUTER\ _\ OK.png);
+}
+.book {
+  background-image: url(../img/BOOK.png);
+}
+.home {
+  background-image: url(../img/HOME.png);
+}
+.image {
+  background-image: url(../img/IMAGE.png);
+} */

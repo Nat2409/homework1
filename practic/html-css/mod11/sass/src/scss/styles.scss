@@ -1,0 +1,48 @@
+$primary-font-stack: 'PT Sans', 'Roboto', 'Arial', sans-serif;
+$primary-color: teal;
+$primery-darc-color: #212121;
+$primary-accent-color: #d87093;
+body {
+  background-color: $primary-color;
+  font-family: $primary-font-stack;
+  color: $primery-darc-color;
+}
+%button {
+  display: inline-block;
+  outline: 0;
+  border: none;
+  text-decoration: none;
+}
+.link {
+  @extend %button;
+
+  color: $primery-darc-color;
+  font-size: 100px;
+
+  &::before {
+    display: inline-block;
+    content: '\2192';
+  }
+
+  &:hover,
+  &:focus {
+    color: $primary-accent-color;
+  }
+}
+.link__text {
+  color: $primery-darc-color;
+}
+@mixin font-settings($size, $height) {
+  font-size: $size;
+  line-height: $height;
+}
+@mixin pseudo($display, $content) {
+  display: $display;
+  content: $content;
+}
+.text {
+  @include font-settings(24px, 1.3);
+  &::before {
+    @include pseudo(inline-block, '\2107');
+  }
+}

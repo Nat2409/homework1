@@ -1,11 +1,21 @@
+@import './common/common.css';
+@import './nav/nav.css';
+@import './logo/logo.css';
+@import './button/button.css';
+@import './main/main.css';
+@import './title/title.css';
+@import './pre-title/pre-title.css';
+@import './services/services.css';
+@import './team/team.css';
+@import './social/social.css';
+@import './footer/footer.css';
 /*
 * Prefixed by https://autoprefixer.github.io
 * PostCSS: v8.3.6,
 * Autoprefixer: v10.3.1
 * Browsers: last 4 version
 */
-
-html {
+/* html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -92,8 +102,8 @@ img {
   margin: 0 auto;
   font-family: 'Montserrat', sans-serif;
   padding-top: 28px;
-}
-.nav {
+} */
+/* .nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -104,15 +114,15 @@ img {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-.logo {
+} */
+/* .logo {
   font-size: 30px;
   font-weight: bold;
   text-transform: capitalize;
   word-spacing: -8px;
   color: #ffffff;
-}
-.nav__list {
+} */
+/* .nav__list {
   width: 490px;
 }
 .nav__link {
@@ -130,7 +140,6 @@ img {
   -o-transition: border-bottom 0.2s linear;
   transition: border-bottom 0.2s linear;
 }
-
 .nav__link:hover,
 .nav__link:focus {
   cursor: pointer;
@@ -143,19 +152,19 @@ img {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-}
-.button__svg {
+} */
+/* .button__svg {
   width: 18px;
   height: 18px;
   fill: #ffffff;
-}
-.nav__button:hover .button__svg {
+} */
+/* .nav__button:hover .button__svg {
   fill: #fce38a;
 }
 .nav__button:focus .button__svg {
   fill: #fce38a;
-}
-.main {
+} */
+/* .main {
   padding-top: 158px;
 }
 .main__pre-title {
@@ -180,14 +189,14 @@ img {
   color: #ffffff;
   font-size: 14px;
   font-weight: 700;
-}
-.pre-title--size {
+} */
+/* .pre-title--size {
   font-size: 24px;
   line-height: 29px;
   color: #333333;
   padding-top: 118px;
-}
-.title--size {
+} */
+/* .title--size {
   font-size: 30px;
   line-height: 36px;
   color: #333333;
@@ -200,8 +209,8 @@ img {
   height: 3px;
   background-color: #f38181;
   margin: 42px auto 64px auto;
-}
-.services__list {
+} */
+/* .services__list {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   width: 1200px;
@@ -215,7 +224,7 @@ img {
 }
 .services__item:nth-last-child(-n + 3) {
   margin-bottom: 0;
-}
+} */
 .alarm {
   background-image: url(../img/ALARM.png);
 }
@@ -234,7 +243,7 @@ img {
 .image {
   background-image: url(../img/IMAGE.png);
 }
-.services__title {
+/* .services__title {
   padding: 0;
   margin-bottom: 14px;
   font-family: 'Montserrat', sans-serif;
@@ -250,8 +259,8 @@ img {
   font-size: 15px;
   line-height: 24px;
   color: #999999;
-}
-.team {
+} */
+/* .team {
   padding-bottom: 86px;
   width: 1200px;
   border-bottom: 1px solid #e5e5e5;
@@ -282,8 +291,8 @@ img {
   -o-transition: transform 0.2s linear;
   transition: transform 0.2s linear;
   transition: transform 0.2s linear, -webkit-transform 0.2s linear;
-}
-.social {
+} */
+/* .social {
   position: absolute;
   top: 0;
   width: 380px;
@@ -310,8 +319,8 @@ img {
     rgba(252, 227, 138, 0) 0%,
     rgba(243, 129, 129, 0) 100%
   );
-}
-.team__member:hover .team__photo {
+} */
+/* .team__member:hover .team__photo {
   -webkit-transform: translate(-10px, -10px);
   -ms-transform: translate(-10px, -10px);
   transform: translate(-10px, -10px);
@@ -340,8 +349,8 @@ img {
 }
 .team__member:hover .social__link {
   opacity: 1;
-}
-.social__list {
+} */
+/* .social__list {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -385,8 +394,8 @@ img {
 }
 .social__link:focus .social__img {
   fill: #ffffff;
-}
-.team__name {
+} */
+/* .team__name {
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   line-height: 17px;
@@ -406,8 +415,8 @@ img {
   color: #999999;
   text-align: center;
   padding-top: 12px;
-}
-.footer {
+} */
+/* .footer {
   width: 1200px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -444,7 +453,7 @@ img {
   color: #ffffff;
   font-weight: 700;
   text-transform: uppercase;
-}
+} */
 @media (-webkit-min-device-pixel-ratio: 2),
   (-o-min-device-pixel-ratio: 2/1),
   (min-resolution: 192dpi),

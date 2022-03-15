@@ -1,0 +1,38 @@
+.footer {
+  width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 0 10px 0;
+  font-family: 'Montserrat', sans-serif;
+}
+.footer__paragraf {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 42px;
+  color: #333333;
+  vertical-align: middle;
+}
+.footer__span {
+  color: #f38181;
+}
+.footer__input {
+  width: 227px;
+  height: 42px;
+  padding-left: 12px;
+  margin-left: auto;
+  border: 1px solid #e5e5e5;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 15px;
+  line-height: 24px;
+}
+.footer__button {
+  width: 150px;
+  height: 42px;
+  background-color: #95e1d3;
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+}

@@ -1,0 +1,83 @@
+.team {
+  padding-bottom: 86px;
+  width: 1200px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.team__paragraf {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #999999;
+  text-align: center;
+  padding: 0 20px 95px 20px;
+  margin: 0 auto;
+  width: 980px;
+}
+.team__list {
+  width: 1200px;
+}
+.team__member {
+  position: relative;
+  width: 380px;
+  height: 470px;
+  background-color: #95e1d3;
+}
+.team__photo {
+  -webkit-transition: -webkit-transform 0.2s linear;
+  transition: -webkit-transform 0.2s linear;
+  -o-transition: transform 0.2s linear;
+  transition: transform 0.2s linear;
+  transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+}
+.team__member:hover .team__photo {
+  -webkit-transform: translate(-10px, -10px);
+  -ms-transform: translate(-10px, -10px);
+  transform: translate(-10px, -10px);
+}
+.team__member:hover .social {
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(rgba(252, 227, 138, 0.9)),
+    to(rgba(243, 129, 129, 0.9))
+  );
+  background: -o-linear-gradient(
+    bottom,
+    rgba(252, 227, 138, 0.9) 0%,
+    rgba(243, 129, 129, 0.9) 100%
+  );
+  background: linear-gradient(
+    to top,
+    rgba(252, 227, 138, 0.9) 0%,
+    rgba(243, 129, 129, 0.9) 100%
+  );
+  -webkit-transform: translate(-10px, -10px);
+  -ms-transform: translate(-10px, -10px);
+  transform: translate(-10px, -10px);
+}
+.team__member:hover .social__link {
+  opacity: 1;
+}
+.team__name {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #333333;
+  text-align: center;
+  padding-top: 29px;
+}
+.team__occupation {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 300;
+  font-style: italic;
+  text-transform: capitalize;
+  color: #999999;
+  text-align: center;
+  padding-top: 12px;
+}

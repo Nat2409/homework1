@@ -1,0 +1,28 @@
+{
+  "name": "homework1",
+  "version": "1.0.0",
+  "description": "mod11",
+  "main": "index.js",
+  "scripts": {
+    "scss:build": "node-sass practic/mod11/sass/src/scss/styles.scss -o practic/mod11/sass/src/css",
+    "scss:watch": "node-sass --watch practic/mod11/sass/src/scss/styles.scss -o practic/mod11/sass/src/css",
+    "build": "npm run scss:build && npm run scss:watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nat2409/homework1.git"
+  },
+  "keywords": [
+    "mod11",
+    "sass"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nat2409/homework1/issues"
+  },
+  "homepage": "https://github.com/Nat2409/homework1#readme",
+  "dependencies": {
+    "node-sass": "^7.0.0"
+  }
+}
