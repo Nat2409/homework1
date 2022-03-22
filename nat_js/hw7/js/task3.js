@@ -16,20 +16,19 @@ const createGalery = images.map(element => {
   const galeryListRef = document.createElement('li');
   galeryListRef.classList.add('list-style');
   const galeryItem = document.createElement('img');
-  
+
   galeryItem.setAttribute('src', element.url);
   galeryItem.setAttribute('alt', element.alt);
   // galeryListRef.appendChild(galeryItem);
   galeryListRef.insertAdjacentElement('afterbegin', galeryItem);
-  
+
   return galeryListRef;
 });
 console.log(createGalery);
 const gallery = document.querySelector('#gallery');
 gallery.append(...createGalery);
-// gallery.insertAdjacentElement('afterbegin', ...createGalery);
+// gallery.insertAdjacentElement('afterbegin', createGalery);
 gallery.classList.add('gallery-style');
 console.log(gallery);
-
-
-// insertAdjacentHTML();
+// const a = 5;
+// gallery.insertAdjacentHTML('afterbegin', `<h1>Hello${a}</h1>`);
