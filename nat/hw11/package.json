@@ -9,7 +9,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://Nat209.github.io/homework1",
+  "homepage": "https://Nat2409.github.io/homework1",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Nat2409/homework1.git"
