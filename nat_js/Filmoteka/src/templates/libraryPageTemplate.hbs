@@ -1,0 +1,18 @@
+{{#each results}}
+	<li class='home-page__item home-page__item-js'>
+		<div class='home-page__item-box>
+			<div class='item__photo-card photo-card-js'>
+
+				<img class="item__photo"
+					src='https://image.tmdb.org/t/p/w500{{this.backdrop_path}}'
+					alt='{{this.original_title}}'
+				/>
+				
+				<p class='item__title'> {{this.title}}({{this.release_date}})</p>
+				<p class='item__vote'>{{this.vote_average}}</p>
+			</div>
+			
+			
+		</div>
+		
+{{/each}}

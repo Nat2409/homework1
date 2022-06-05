@@ -1,0 +1,117 @@
+.header {
+	background-color: $main-color;
+	color: $header-text-color;
+	// margin: 0 auto;
+	// display: flex;
+	// justify-content: space-between;
+	height: 66px;
+
+	@media (max-width: 767px) {
+		// width: 320px;
+	}
+
+	@media (min-width: 768px) and (max-width: 1279px) {
+		// width: 716px;
+	}
+
+	@media (min-width: 1280px) {
+		// width: 964px;
+	}
+}
+.nav {
+	display: flex;
+	justify-content: space-between;
+	@media (max-width: 767px) {
+		// width: 320px;
+		padding: 2px 20px;
+	}
+
+	@media (min-width: 768px) and (max-width: 1279px) {
+		// width: 716px;
+		padding: 2px 34px;
+	}
+
+	@media (min-width: 1280px) {
+		// width: 964px;
+		padding: 2px 30px;
+	}
+}
+.logo {
+	display: block;
+}
+.logo__icon {
+	@extend %link;
+	// width: 19px;
+	height: 66px;
+}
+.logo__icon--text {
+	line-height: 62px;
+	font-size: 26px;
+	// font-family: 'Myriad Pro';
+
+	color: $header-text-color;
+	text-align: left;
+	@media (max-width: 767px) {
+		display: none;
+	}
+	@media (min-width: 768px) {
+		opacity: 0.871;
+	}
+}
+.logo__img {
+	display: inline-block;
+	@media (max-width: 767px) {
+		padding-top: 21px;
+	}
+	@media (min-width: 768px) {
+		margin-right: 10px;
+	}
+}
+.nav__list {
+	@extend %list;
+	width: 250px;
+	display: flex;
+	justify-content: space-between;
+}
+.list__item {
+}
+.list__link {
+	@extend %link;
+	width: 124px;
+	padding: 16px 0px;
+	text-transform: uppercase;
+	text-align: center;
+	border-bottom: 3px solid rgba(55, 44, 72, 0);
+	color: $header-text-color;
+	font-size: 18px;
+	opacity: 0.702;
+	// transition: opacity 0.2s linear;
+	// transition: border-color 0.2s linear;
+
+	&:hover,
+	&:focus {
+		border-bottom: 3px solid rgba(55, 44, 72, 0.871);
+		opacity: 0.871;
+	}
+}
+.HOME {
+	font-size: 50px;
+	font-family: 'Myriad Pro';
+	color: #372c48;
+	text-align: center;
+}
+.my_library {
+	font-size: 50px;
+	font-family: 'Myriad Pro';
+	color: rgba(55, 44, 72, 0.702);
+	line-height: 1.2;
+	text-align: center;
+}
+
+.HOME {
+	font-size: 50px;
+	font-family: 'Myriad Pro';
+	color: rgb(55, 44, 72);
+	line-height: 1.2;
+	text-align: center;
+}

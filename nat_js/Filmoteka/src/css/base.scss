@@ -1,0 +1,23 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+body {
+	font-family: $font-family-main;
+	line-height: 1.5;
+	// letter-spacing: 0.05em;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}

@@ -1,0 +1,130 @@
+.details {
+	margin: 0 auto;
+	margin-bottom: 28px;
+
+	@media (max-width: 767px) {
+		width: 277px;
+	}
+
+	@media (min-width: 768px) {
+		display: flex;
+		justify-content: space-between;
+	}
+	@media (max-width: 1023px) {
+		padding-top: 24px;
+	}
+	@media (min-width: 768px) and (max-width: 1023px) {
+		width: 717px;
+		padding-left: 10px;
+	}
+	@media (min-width: 1024px) {
+		width: 964px;
+		padding: 28px 17px 0 35px;
+	}
+}
+.details__container {
+	@media (min-width: 768px) {
+		padding-left: 14px;
+	}
+
+	@media (min-width: 768px) and (max-width: 1023px) {
+		width: 340px;
+	}
+	@media (min-width: 1024px) {
+		width: 451px;
+	}
+}
+.details__descript {
+	@media (max-width: 767px) {
+		width: 275px;
+		margin-bottom: 10px;
+	}
+
+	@media (min-width: 768px) {
+		margin-bottom: 30px;
+	}
+}
+.details__img {
+	@media (min-width: 768px) and (max-width: 1023px) {
+		width: 357px;
+	}
+	@media (min-width: 1024px) {
+		width: 428px;
+	}
+}
+.descript__title {
+	margin-bottom: 14px;
+	font-size: 20px;
+	font-family: $font-family-main;
+	font-weight: 500;
+	color: rgba(55, 44, 72, 0.941);
+	line-height: 1.2;
+
+	@media (max-width: 767px) {
+		padding-top: 20px;
+	}
+
+	@media (min-width: 768px) {
+		padding-top: 10px;
+	}
+}
+
+.descript {
+	font-size: 16px;
+	font-family: $font-family-main;
+	color: rgba(55, 44, 72, 0.541);
+
+	text-align: left;
+}
+.descript--about {
+	margin-bottom: 30px;
+}
+
+.descript__positions {
+	display: flex;
+	justify-content: flex-start;
+	min-height: 28px;
+
+	&:nth-of-type(2n) {
+		background-color: $main-color;
+	}
+}
+
+.positions__names {
+	// display: block;
+	width: 100px;
+	margin-right: 24px;
+}
+.positions__variables {
+	@media (max-width: 767px) {
+		width: 145px;
+	}
+	@media (min-width: 768px) and (max-width: 1023px) {
+		width: 200px;
+	}
+	@media (min-width: 1024px) {
+		width: 312px;
+	}
+}
+.details__btn {
+	width: 130px;
+
+	color: rgba(55, 44, 72, 0.841);
+	font-size: 14px;
+	font-weight: 500;
+	font-family: $font-family-main;
+	// color: rgb(55, 44, 72);
+	line-height: 1.214;
+	text-align: left;
+	border: none;
+	background-color: transparent;
+	&:focus,
+	&:hover {
+		cursor: pointer;
+		color: $main-color;
+	}
+
+	@media (max-width: 767px) {
+		visibility: hidden;
+	}
+}

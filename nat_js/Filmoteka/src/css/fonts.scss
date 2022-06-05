@@ -1,0 +1,40 @@
+/* roboto-regular - latin */
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	src: local(''), url('./fonts/roboto-v30-latin-regular.woff2') format('woff2'),
+		/* Chrome 26+, Opera 23+, Firefox 39+ */
+			url('./fonts/roboto-v30-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-500 - latin */
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 500;
+	src: local(''), url('./fonts/roboto-v30-latin-500.woff2') format('woff2'),
+		/* Chrome 26+, Opera 23+, Firefox 39+ */
+			url('./fonts/roboto-v30-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-500 - latin */
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 500;
+	src: local(''), url('./fonts/roboto-v30-latin-500.woff2') format('woff2'),
+		/* Chrome 26+, Opera 23+, Firefox 39+ */
+			url('./fonts/roboto-v30-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+	font-family: 'Droid Sans Bold';
+	// font-style: normal;
+	// font-weight: 700;
+	src: url('./fonts/188c8e4638529132acf0cd5791c4f26f.woff2') format('woff2'),
+		/* chrome、firefox */ url('./fonts/188c8e4638529132acf0cd5791c4f26f.woff')
+			format('woff'),
+		/* chrome、firefox */ url('./fonts/188c8e4638529132acf0cd5791c4f26f.ttf')
+			format('truetype');
+
+	/* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+}

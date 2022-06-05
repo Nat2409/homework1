@@ -5,10 +5,80 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<title>Filmoteka</title>
+		<link rel="import" href="html/header.html" />
+		<link rel="import" href="html/main.html" />
+		<link rel="import" href="html/footer.html" />
 		<!-- <link
 			href="https://fonts.googleapis.com/icon?family=Material+Icons"
 			rel="stylesheet"
 		/> -->
 	</head>
-	<body></body>
+	<body>
+		<header class="header">
+			<nav class="nav">
+				<logo class="logo">
+					<a class="logo__icon" href="">
+						<img class="logo__img" src="./images/logo.png" alt="logo" />
+						<!-- <svg class="logo__svg">
+							<use href="./images/icons/film.svg"></use>
+						</svg> -->
+						<span class="logo__icon--text">Filmoteka</span>
+					</a>
+				</logo>
+				<ul class="nav__list">
+					<li class="list__item"><a class="list__link" href="">Home</a></li>
+					<li class="list__item">
+						<a class="list__link" href="">My library</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<section class="main__section">
+				<div class="main__buttons">
+					<button type="button" class="section__btn" data-value="Watched">
+						Watched
+					</button>
+					<button type="button" class="section__btn" data-value="Queue">
+						Queue
+					</button>
+				</div>
+			</section>
+			<!-- <form class="main__section main__form" action="">
+				<input
+					class="form__input"
+					type="text"
+					placeholder="Write movie name and click Enter"
+				/>
+			</form> -->
+			<div class="main__home-page">
+				<ul class="home-page__list home-page__list--js"></ul>
+			</div>
+
+			<div class="pagination">
+				<button
+					class="pagination--text pagination__btn"
+					type="button"
+					data-action="prew"
+				>
+					Prew
+				</button>
+				<p class="pagination--text pagination__page">1</p>
+				<button
+					class="pagination--text pagination__btn"
+					type="button"
+					data-action="next"
+				>
+					Next
+				</button>
+			</div>
+		</main>
+
+		<footer class="footer">
+			<p class="footer__paragraf">Made by GroupName</p>
+			<button type="button" class="button-up">
+				<img class="button-up__img" src="./images/button-up.png" alt="" />
+			</button>
+		</footer>
+	</body>
 </html>

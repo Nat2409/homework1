@@ -1,4 +1,14 @@
-.wrapper {
-	display: flex;
-	justify-content: space-between;
-}
+@import './css/fonts.scss';
+@import './css/helpers/variables.scss';
+@import './css/helpers/placeholders.scss';
+@import './css/helpers/mixins.scss';
+@import './css/helpers/extras.scss';
+@import './css/helpers/normalize.scss';
+@import './css/base.scss';
+
+@import './css/header.scss';
+@import './css/main.scss';
+@import './css/detailsPage.scss';
+@import './css/homePage.scss';
+@import './css/myFilmLibraryPage.scss';
+@import './css/footer.scss';
