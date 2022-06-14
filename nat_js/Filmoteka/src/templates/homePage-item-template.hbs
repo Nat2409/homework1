@@ -1,6 +1,6 @@
-{{#each results}}
-	<li class='home-page__item home-page__item-js'>
-		<div class='home-page__item-box>
+{{#each this}}
+	<li class='home-page__item home-page__item-js' id="{{this.id}}">
+		
 			<div class='item__photo-card photo-card-js'>
 
 				<img class="item__photo"
@@ -8,9 +8,7 @@
 					alt='{{this.original_title}}'
 				/>
 				
-				<p class='item__title'> {{this.title}}({{this.release_date}})</p>
+				<p class='item__title'> {{this.title}} ({{this.release_date}})</p>
 			</div>
-			
-		</div>
 		
 {{/each}}

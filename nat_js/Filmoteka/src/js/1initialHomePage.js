@@ -1,83 +1,101 @@
 'use strict';
-import galleryTemplate from '../templates/homePage-item-template.hbs';
+import fetchAPI from './fetchAPI';
+import galleryPopularMoviesTemplate from '../templates/homePage-item-template.hbs';
+import libraryPageTemplate from '../templates/libraryPageTemplate.hbs';
+import detailsTemplate from '../templates/detailsPage.hbs';
 
 const galleryRef = document.querySelector('.home-page__list--js');
-const galleryItemRef = document.querySelector('.home-page__item-js');
 
-// galleryItemRef.addEventListener('click', activeDetailsPage);
+galleryRef.addEventListener('click', activeDetailsPage);
 
-//Search vs popular
-// 'https://api.themoviedb.org/3/search/movie?api_key=3ca4f0fa98e22b27d06819a16b26fd68&query=%D1%84%D1%83%D1%82%D0%B1%D0%BE%D0%BB&page=1'
+fetchAPI.fetchPopularMoviesList().then(data => {
+	console.log('popularData:', data);
+	createCardFunc(data);
+	// renderPopularMoviesGallery(data);
+});
 
-// https://api.themoviedb.org/3/movie/popular?api_key=3ca4f0fa98e22b27d06819a16b26fd68
+function renderDetailsPage(data) {
+	const dataMovie = {};
+	// const { genres, poster_path } = data;
+	const genresList = data.genres.map(genre => ' ' + genre.name.toLowerCase());
+	const imgPath = data.poster_path;
+	const release = data.release_date.substring(0, 4);
+	// if (data.release_date === '') {
+	// 	release = 'coming soon';
+	// }
+	// const popularityMovie = Number.parseInt(data.popularity);
+	const popularityMovie = data.popularity;
+	const titleOrigin = data.original_title;
+	const titleMovie = data.title;
+	const voteAverage = data.vote_average;
+	const voteCount = data.vote_count;
+	const overviewMovie = data.overview;
 
-const baseUrl = 'https://api.themoviedb.org/3/';
-const searchMovie = 'search/movie';
-const popularMovie = 'movie/popular';
-const query = `&query=${searchQuery}`;
-const page = `&page=${pageNumber}`;
-const myKey = '?api_key=3ca4f0fa98e22b27d06819a16b26fd68';
-const renderFilms = '';
-let genres = [];
-let pageNumber = 1;
-const searchQuery = 'love';
-// console.log(baseUrl + 'genre/movie/list' + myKey);
+	// const dataMovie = {
+	// 	...data,
+	// 	genres: genres.map(),
+	// };
 
-// function fetchPopularMoviesList() {
-// 	return fetch(baseUrl + popularMovie + myKey)
-// 		.then(response => response.json())
-// 		.then(data => renderGallery(data))
-// 		.catch(console.warn);
-// }
+	dataMovie.genres = genresList;
+	dataMovie.poster_path = imgPath;
+	dataMovie.release_date = release;
+	dataMovie.popularity = popularityMovie;
+	dataMovie.original_title = titleOrigin;
+	dataMovie.title = titleMovie;
+	dataMovie.vote_average = voteAverage;
+	dataMovie.vote_count = voteCount;
+	dataMovie.overview = overviewMovie;
 
-fetchPopularMoviesList();
-
-function fetchGenres() {
-	return fetch(baseUrl + 'genre/movie/list' + myKey)
-		.then(response => response.json)
-		.then(genres => {
-			console.log('genres:', genres);
-		})
-		.catch(console.warn);
+	const markupMovie = detailsTemplate(dataMovie);
+	galleryRef.insertAdjacentHTML('beforeend', markupMovie);
 }
-console.log(fetchGenres());
-// console.log(galleryRef);
 
-function renderGallery(data) {
-	// console.log(data);
+function activeDetailsPage(event) {
+	if (event.target.offsetParent.nodeName === 'LI') {
+		// paginationRef.classList.add('pagination-opacity');
+		const idMovie = event.target.offsetParent.id;
+		console.log(event.target.offsetParent.id);
+		galleryRef.innerHTML = '';
 
-	const markup = galleryTemplate(data);
+		// paginationRef.classList.add('pagination-opacity');
+
+		fetchAPI.fetchDetailsMovie(idMovie).then(data => {
+			renderDetailsPage(data);
+		});
+	}
+}
+
+function renderlibraryPage(renderFilms) {
+	const markup = libraryPageTemplate(renderFilms);
 	galleryRef.insertAdjacentHTML('beforeend', markup);
 }
 
-function createCardFunc(imgPath, filmTitle, movieId) {}
-function activeDetailsPage(movieId, selectFilm = false) {}
-
-// for detailsPage
-// import detailsTemplate from '../templates/detailsPage.hbs';
-// function renderDetailsPage(data) {
-// 	const markup = detailsTemplate(data);
-// 	galleryRef.insertAdjacentHTML('beforeend', markup);
-// }
-
-// function fetchPopularMoviesList() {
-// 	return fetch(baseUrl + popularMovie + myKey)
-// 		.then(response => response.json())
-// 		.then(data => renderDetailsPage(data))
-// 		.catch(console.warn);
-// }
-
-import libraryPageTemplate from '../templates/libraryPageTemplate.hbs';
-function renderlibraryPage(data) {
-	const markup = libraryPageTemplate(data);
-	// console.log(data);
-	// console.log(markup);
+function renderPopularMoviesGallery(renderFilms) {
+	const markup = galleryPopularMoviesTemplate(renderFilms);
 	galleryRef.insertAdjacentHTML('beforeend', markup);
 }
 
-function fetchPopularMoviesList() {
-	return fetch(baseUrl + popularMovie + myKey)
-		.then(response => response.json())
-		.then(data => renderlibraryPage(data))
-		.catch(console.warn);
+function createCardFunc(data) {
+	fetchAPI.numberOfPages = data.total_pages;
+	const renderFilms = data.results.map(result => {
+		let results = new Object();
+		results.id = result.id;
+
+		results.backdrop_path = result.backdrop_path;
+		if (result.backdrop_path === null) {
+			results.backdrop_path = '/6qWHzcmnGpCwwyfYBH6rTuLJmm8.jpg';
+		}
+
+		results.release_date = result.release_date.substring(0, 4);
+		if (result.release_date === '') {
+			results.release_date = 'coming soon';
+		}
+		results.original_title = result.original_title;
+		results.title = result.title;
+		results.vote_average = result.vote_average;
+		return results;
+	});
+
+	renderPopularMoviesGallery(renderFilms);
+	// renderlibraryPage(renderFilms);
 }

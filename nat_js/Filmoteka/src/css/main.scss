@@ -26,6 +26,10 @@
 		color: $search-line-text-color;
 		line-height: 1;
 	}
+	// &:active {
+	// 	border: none;
+	// 	border-bottom: 2px solid #3ece4a;
+	// }
 	&::before {
 		display: inline-block;
 		content: '';
@@ -45,8 +49,20 @@
 		width: 285px;
 	}
 }
+.form_error {
+	width: 320px;
+	padding: 0;
+	margin: 0 auto;
+	color: red;
+	font-weight: 500;
+	opacity: 0;
+}
+.form_error-opacity {
+	opacity: 1;
+}
 
 .pagination {
+	opacity: 1;
 	margin: 0 auto;
 	margin-bottom: 14px;
 	display: flex;
@@ -60,7 +76,9 @@
 		width: 212px;
 	}
 }
-
+.pagination-opacity {
+	opacity: 0;
+}
 .pagination--text {
 	height: 46px;
 	font-size: 14px;

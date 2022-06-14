@@ -38,7 +38,8 @@
 		right: 14px;
 		bottom: 18px;
 		// transition: background-color 0.2s linear;
-		&:active {
+		&:hover,
+		&:focus {
 			cursor: pointer;
 			background-color: #b4f2ed;
 		}

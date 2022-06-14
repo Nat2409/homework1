@@ -78,40 +78,25 @@
 .list__link {
 	@extend %link;
 	width: 124px;
-	padding: 16px 0px;
+	padding: 12px 0px;
 	text-transform: uppercase;
 	text-align: center;
 	border-bottom: 3px solid rgba(55, 44, 72, 0);
 	color: $header-text-color;
-	font-size: 18px;
+	font-size: 16px;
+	font-weight: 500;
 	opacity: 0.702;
 	// transition: opacity 0.2s linear;
 	// transition: border-color 0.2s linear;
 
 	&:hover,
-	&:focus {
+	&:focus,
+	&:active {
 		border-bottom: 3px solid rgba(55, 44, 72, 0.871);
 		opacity: 0.871;
 	}
 }
-.HOME {
-	font-size: 50px;
-	font-family: 'Myriad Pro';
-	color: #372c48;
-	text-align: center;
+.link__home {
 }
-.my_library {
-	font-size: 50px;
-	font-family: 'Myriad Pro';
-	color: rgba(55, 44, 72, 0.702);
-	line-height: 1.2;
-	text-align: center;
-}
-
-.HOME {
-	font-size: 50px;
-	font-family: 'Myriad Pro';
-	color: rgb(55, 44, 72);
-	line-height: 1.2;
-	text-align: center;
+.link__library {
 }

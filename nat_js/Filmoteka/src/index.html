@@ -26,15 +26,19 @@
 					</a>
 				</logo>
 				<ul class="nav__list">
-					<li class="list__item"><a class="list__link" href="">Home</a></li>
 					<li class="list__item">
-						<a class="list__link" href="">My library</a>
+						<a class="list__link link__home link__home-js" href="#">Home</a>
+					</li>
+					<li class="list__item">
+						<a class="list__link link__library link__library-js" href="#"
+							>My library</a
+						>
 					</li>
 				</ul>
 			</nav>
 		</header>
 		<main>
-			<section class="main__section">
+			<!-- <section class="main__section">
 				<div class="main__buttons">
 					<button type="button" class="section__btn" data-value="Watched">
 						Watched
@@ -43,35 +47,36 @@
 						Queue
 					</button>
 				</div>
-			</section>
-			<!-- <form class="main__section main__form" action="">
+			</section> -->
+			<form class="main__section main__form main__form-js" action="">
 				<input
-					class="form__input"
+					class="form__input form__input-js"
 					type="text"
 					placeholder="Write movie name and click Enter"
 				/>
-			</form> -->
-			<div class="main__home-page">
+				<p class="form_error form_error-js">Пошук не дав результатів</p>
+			</form>
+			<section class="main__home-page">
 				<ul class="home-page__list home-page__list--js"></ul>
-			</div>
+			</section>
 
-			<div class="pagination">
+			<section class="pagination pagination-js">
 				<button
-					class="pagination--text pagination__btn"
+					id="btn-prew"
+					class="pagination--text pagination__btn pagination__btn-prew-js pagination-opacity"
 					type="button"
-					data-action="prew"
 				>
 					Prew
 				</button>
-				<p class="pagination--text pagination__page">1</p>
+				<p class="pagination--text pagination__page pagination__page-js">1</p>
 				<button
-					class="pagination--text pagination__btn"
+					id="btn-next"
+					class="pagination--text pagination__btn pagination__btn-next-js"
 					type="button"
-					data-action="next"
 				>
 					Next
 				</button>
-			</div>
+			</section>
 		</main>
 
 		<footer class="footer">

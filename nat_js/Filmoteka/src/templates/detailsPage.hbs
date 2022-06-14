@@ -1,46 +1,44 @@
-{{#each results}}
-	<div class='details'>
-		<img
-			class='details__img'
-			src='https://image.tmdb.org/t/p/w500{{this.poster_path}}'
-			alt='{{this.original_title}}'
-		/>
+<div class='details'>
+	<img
+		class='details__img'
+		src='https://image.tmdb.org/t/p/w500{{this.poster_path}}'
+		alt='{{this.original_title}}'
+	/>
 
-		<div class='details__container'>
-			<p class='descript__title'>{{this.title}}({{this.release_date}})</p>
-			<div class='details__descript'>
-				<div class='descript__positions'>
-					<p class='descript positions__names'>vote/votes</p>
-					<p
-						class='descript positions__variables'
-					>{{this.vote_average}}/{{this.vote_count}}</p>
-				</div>
-				<div class='descript__positions'>
-					<p class='descript positions__names'>popularity</p>
-					<p class='descript positions__variables'>{{this.popularity}}</p>
-				</div>
-
-				<div class='descript__positions'>
-					<p class='descript positions__names'>original&nbsp;title</p>
-					<p class='descript positions__variables'>{{this.original_title}}</p>
-				</div>
-
-				<div class='descript__positions'>
-					<p class='descript positions__names'>genre</p>
-					<p class='descript positions__variables'>{{this.genre_ids}}</p>
-				</div>
+	<div class='details__container'>
+		<p class='descript__title'>{{this.title}} ({{this.release_date}})</p>
+		<div class='details__descript'>
+			<div class='descript__positions'>
+				<p class='descript positions__names'>vote/votes</p>
+				<p
+					class='descript positions__variables'
+				>{{this.vote_average}}/{{this.vote_count}}</p>
 			</div>
-			<p class='descript__title'>About</p>
-			<p class='descript descript--about'>{{this.overview}}</p>
+			<div class='descript__positions'>
+				<p class='descript positions__names'>popularity</p>
+				<p class='descript positions__variables'>{{this.popularity}}</p>
+			</div>
 
-			<button
-				class='details__btn btn__add-to-watched'
-				data-action='add-to-watched'
-			>Add to watched
-			</button>
-			<button class='details__btn btn__add-to-queue' data-action='add-to-queue'>
-				Add to queue
-			</button>
+			<div class='descript__positions'>
+				<p class='descript positions__names'>original&nbsp;title</p>
+				<p class='descript positions__variables'>{{this.original_title}}</p>
+			</div>
+
+			<div class='descript__positions'>
+				<p class='descript positions__names'>genre</p>
+				<p class='descript positions__variables'>{{this.genres}}</p>
+			</div>
 		</div>
+		<p class='descript__title'>About</p>
+		<p class='descript descript--about'>{{this.overview}}</p>
+
+		<button
+			class='details__btn btn__add-to-watched'
+			data-action='add-to-watched'
+		>Add to watched
+		</button>
+		<button class='details__btn btn__add-to-queue' data-action='add-to-queue'>
+			Add to queue
+		</button>
 	</div>
-{{/each}}
+</div>
